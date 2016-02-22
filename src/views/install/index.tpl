@@ -7,7 +7,7 @@
 	<title>NodeBB Web安装程序</title>
 
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>-->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
@@ -60,28 +60,28 @@
 						<label for="admin:username">管理员用户名</label>
 						<input type="text" class="form-control" name="admin:username" value="<!-- IF admin:username -->{admin:username}<!-- ENDIF admin:username -->" placeholder="Username" />
 					</div>
-					<div class="col-sm-5 help-text" data-help="Enter an <strong>alphanumeric username</strong>. Spaces between words are allowed. You can always change your username later on your profile page."></div>
+					<div class="col-sm-5 help-text" data-help="Enter an <strong>字母数字的用户名</strong>. 单词之间的空格是允许的。以后您可以随时更改用户名，您的个人资料页上."></div>
 				</div>
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
 						<label for="admin:email">邮箱地址</label>
 						<input type="text" class="form-control" name="admin:email" value="<!-- IF admin:email -->{admin:email}<!-- ENDIF admin:email -->" placeholder="Email Address" />
 					</div>
-					<div class="col-sm-5 help-text" data-help="Please enter your email address."></div>
+					<div class="col-sm-5 help-text" data-help="请输入您的电子邮件地址."></div>
 				</div>
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
 						<label for="admin:password">密码</label>
 						<input type="password" class="form-control" name="admin:password" value="<!-- IF admin:password -->{admin:password}<!-- ENDIF admin:password -->" placeholder="Password" />
 					</div>
-					<div class="col-sm-5 help-text" data-help="Use a combination of numbers, symbols, and different cases. You can change the strictness of password creation in the Admin Control Panel."></div>
+					<div class="col-sm-5 help-text" data-help="大于 6位字节 使用数字，符号，以及不同的情况的组合。您可以更改密码创建的严格管理控制面板中."></div>
 				</div>
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
 						<label for="admin:passwordConfirm">确认密码</label>
 						<input type="password" class="form-control" name="admin:passwordConfirm" value="<!-- IF admin:passwordConfirm -->{admin:passwordConfirm}<!-- ENDIF admin:passwordConfirm -->" placeholder="Confirm Password" />
 					</div>
-					<div class="col-sm-5 help-text" data-help="Please confirm your password."></div>
+					<div class="col-sm-5 help-text" data-help="请确认您的密码."></div>
 				</div>
 			</div>
 
@@ -104,7 +104,7 @@
 							<option value="mongo">MongoDB</option>
 						</select>
 					</div>
-					<div class="col-sm-5 help-text" data-help="留空以使用默认设置的字段."><!-- IF error -->There was an error connecting to your database. Please try again.<!-- ENDIF error --></div>
+					<div class="col-sm-5 help-text" data-help="留空以使用默认设置的字段."><!-- IF error -->连接到数据库的错误。请重试.<!-- ENDIF error --></div>
 				</div>
 
 				<div id="database-config"></div>
