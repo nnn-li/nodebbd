@@ -1,10 +1,9 @@
-# Welcome to your brand new NodeBB forum!
+# 工匠精神
 
-This is what a topic and post looks like. As an administrator, you can edit the post\'s title and content.
-To customise your forum, go to the [Administrator Control Panel](../../admin). You can modify all aspects of your forum there, including installation of third-party plugins.
+>我不是为了输赢，我只是太认真
 
-## Additional Resources
+## 烂大街
 
-* [NodeBB Documentation](https://docs.nodebb.org)
-* [Community Support Forum](https://community.nodebb.org)
-* [Project repository](https://github.com/nodebb/nodebb)
+* [zan3](http://zan3.com)
+* [github](https://github.com/zanjs)
+* [zanjs](http://zanjs)
