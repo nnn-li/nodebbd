@@ -16,9 +16,8 @@ Next, launch the NodeBB instance, so it links with the just-launched Redis insta
 
 
 ```
-docker run --name nodebbd --link zan-redis:redis -p 80:80 -p 443:443 -p 4567:4567 -P -t -i nodebb/docker:centos
+docker run --name nodebbd --link zan-redis:redis -p 80:80 -p 443:443 -p 4567:4567 -P -t -i zanjs/nodebbd
 
-docker run --name nodebbd --link zan-redis:redis -p 80:80 -p 443:443 -p 4567:4567 -P -t -i nodebb/docker:ubuntu 
 ```
 
 
