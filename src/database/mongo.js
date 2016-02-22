@@ -16,29 +16,29 @@
 	module.questions = [
 		{
 			name: 'mongo:host',
-			description: 'Host IP or address of your MongoDB instance',
+			description: '托管您MongoDB实例的IP或者地址',
 			'default': nconf.get('mongo:host') || '127.0.0.1'
 		},
 		{
 			name: 'mongo:port',
-			description: 'Host port of your MongoDB instance',
+			description: '托管您MongoDB实例的端口',
 			'default': nconf.get('mongo:port') || 27017
 		},
 		{
 			name: 'mongo:username',
-			description: 'MongoDB username',
+			description: 'MongoDB的用户名',
 			'default': nconf.get('mongo:username') || ''
 		},
 		{
 			name: 'mongo:password',
-			description: 'Password of your MongoDB database',
+			description: '您的MongoDB数据库的密码',
 			hidden: true,
 			before: function(value) { value = value || nconf.get('mongo:password') || ''; return value; }
 		},
 		{
 			name: "mongo:database",
-			description: "Which database to use",
-			'default': nconf.get('mongo:database') || 0
+			description: "要使用的数据库",
+			'default': nconf.get('mongo:database') || 'nodebbd'
 		}
 	];
 

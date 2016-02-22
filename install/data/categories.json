@@ -1,31 +1,31 @@
 [
     {
-        "name": "Announcements",
-        "description": "Announcements regarding our community",
+        "name": "通告",
+        "description": "关于我们的社区公告",
         "bgColor": "#fda34b",
         "color": "#fff",
         "icon" : "fa-bullhorn",
         "order": 1
     },
     {
-        "name": "General Discussion",
-        "description": "A place to talk about whatever you want",
+        "name": "一般讨论",
+        "description": "可以肆意忌惮的耍存在",
         "bgColor": "#59b3d0",
         "color": "#fff",
         "icon" : "fa-comments-o",
         "order": 2
     },
     {
-        "name": "Blogs",
-        "description": "Blog posts from individual members",
+        "name": "博客",
+        "description": "个人会员的博客文章",
         "bgColor": "#86ba4b",
         "color": "#fff",
         "icon" : "fa-newspaper-o",
         "order": 4
     },
     {
-        "name": "Comments & Feedback",
-        "description": "Got a question? Ask away!",
+        "name": "评论与反馈",
+        "description": "迷途了吗，遇到问题请告知我们!",
         "bgColor": "#e95c5a",
         "color": "#fff",
         "icon" : "fa-question",

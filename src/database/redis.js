@@ -13,23 +13,23 @@
 	module.questions = [
 		{
 			name: 'redis:host',
-			description: 'Host IP or address of your Redis instance',
+			description: '托管您的Redis实例的IP 或地址',
 			'default': nconf.get('redis:host') || '127.0.0.1'
 		},
 		{
 			name: 'redis:port',
-			description: 'Host port of your Redis instance',
+			description: '托管您的Redis实例的端口',
 			'default': nconf.get('redis:port') || 6379
 		},
 		{
 			name: 'redis:password',
-			description: 'Password of your Redis database',
+			description: '您的Redis数据库的密码',
 			hidden: true,
 			before: function(value) { value = value || nconf.get('redis:password') || ''; return value; }
 		},
 		{
 			name: "redis:database",
-			description: "Which database to use (0..n)",
+			description: "要使用的数据库(0..n)",
 			'default': nconf.get('redis:database') || 0
 		}
 	];

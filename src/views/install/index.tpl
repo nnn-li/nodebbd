@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>NodeBB Web Installer</title>
+	<title>NodeBB Web安装程序</title>
 
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -35,9 +35,9 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="/">Installer</a></li>
-					<li><a href="https://docs.nodebb.org" target="_blank">Get Help</a></li>
-					<li><a href="https://community.nodebb.org" target="_blank">Community</a></li>
+					<li class="active"><a href="/">安装程序</a></li>
+					<li><a href="https://docs.nodebb.org" target="_blank">获得帮助</a></li>
+					<li><a href="https://community.nodebb.org" target="_blank">社区</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,40 +45,40 @@
 
 	<div class="container <!-- IF success -->hide<!-- ENDIF success -->">
 		<p>
-			<h1>Welcome to the NodeBB Installer</h1>
-			You are just a few steps away from launching your own NodeBB forum!
+			<h1>欢迎NodeBB安装</h1>
+			启动NodeBB论坛只是几步之遥！
 		</p>
 		<form id="install" action="/" method="post">
 			<div class="admin">
 				<p>
-					<h1><small>Create an Administrator account</small></h1>
+					<h1><small>创建管理员帐户</small></h1>
 					<hr />
 				</p>
 
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
-						<label for="admin:username">Username</label>
+						<label for="admin:username">管理员用户名</label>
 						<input type="text" class="form-control" name="admin:username" value="<!-- IF admin:username -->{admin:username}<!-- ENDIF admin:username -->" placeholder="Username" />
 					</div>
 					<div class="col-sm-5 help-text" data-help="Enter an <strong>alphanumeric username</strong>. Spaces between words are allowed. You can always change your username later on your profile page."></div>
 				</div>
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
-						<label for="admin:email">Email Address</label>
+						<label for="admin:email">邮箱地址</label>
 						<input type="text" class="form-control" name="admin:email" value="<!-- IF admin:email -->{admin:email}<!-- ENDIF admin:email -->" placeholder="Email Address" />
 					</div>
 					<div class="col-sm-5 help-text" data-help="Please enter your email address."></div>
 				</div>
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
-						<label for="admin:password">Password</label>
+						<label for="admin:password">密码</label>
 						<input type="password" class="form-control" name="admin:password" value="<!-- IF admin:password -->{admin:password}<!-- ENDIF admin:password -->" placeholder="Password" />
 					</div>
 					<div class="col-sm-5 help-text" data-help="Use a combination of numbers, symbols, and different cases. You can change the strictness of password creation in the Admin Control Panel."></div>
 				</div>
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
-						<label for="admin:passwordConfirm">Confirm Password</label>
+						<label for="admin:passwordConfirm">确认密码</label>
 						<input type="password" class="form-control" name="admin:passwordConfirm" value="<!-- IF admin:passwordConfirm -->{admin:passwordConfirm}<!-- ENDIF admin:passwordConfirm -->" placeholder="Confirm Password" />
 					</div>
 					<div class="col-sm-5 help-text" data-help="Please confirm your password."></div>
@@ -92,13 +92,13 @@
 			<!-- IF !skipDatabaseSetup -->
 			<div class="database">
 				<p>
-					<h1><small>Configure your database</small></h1>
+					<h1><small>配置数据库</small></h1>
 					<hr />
 				</p>
 
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
-						<label for="database">Database Type</label>
+						<label for="database">数据库类型</label>
 						<select class="form-control" name="database">
 							<option value="redis">Redis</option>
 							<option value="mongo">MongoDB</option>
@@ -111,16 +111,16 @@
 			</div>
 			<!-- ENDIF !skipDatabaseSetup -->
 
-			<button id="submit" type="submit" class="btn btn-lg btn-success">Install NodeBB <i class="fa fa-spinner fa-spin hide"></i></button>
+			<button id="submit" type="submit" class="btn btn-lg btn-success">确定安装 <i class="fa fa-spinner fa-spin hide"></i></button>
 		</form>
 	</div>
 
 
 	<div class="container <!-- IF !success -->hide<!-- ENDIF !success -->">
 		<p>
-			<h1>Congratulations! Your NodeBB has been set-up.</h1>
+			<h1>恭喜！您的NodeBB已建立.</h1>
 			
-			<button id="launch" class="btn btn-lg btn-success">Launch NodeBB <i class="fa fa-spinner fa-spin hide"></i></button>
+			<button id="launch" class="btn btn-lg btn-success">发射 NodeBB <i class="fa fa-spinner fa-spin hide"></i></button>
 		</p>
 	</div>
 
