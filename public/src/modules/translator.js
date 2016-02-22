@@ -57,7 +57,7 @@
 		// Load the appropriate timeago locale file, and correct NodeBB language codes to timeago codes, if necessary
 		var	languageCode;
 		switch(config.userLang) {
-			case 'en_GB':
+			case 'zh_CN':
 			case 'en_US':
 				languageCode = 'en';
 				break;
@@ -131,10 +131,10 @@
 		if (typeof language === 'function') {
 			callback = language;
 			if ('undefined' !== typeof window && config) {
-				language = utils.params().lang || config.userLang || 'en_GB';
+				language = utils.params().lang || config.userLang || 'zh_CN';
 			} else {
 				var meta = require('../../../src/meta');
-				language = meta.config.defaultLang || 'en_GB';
+				language = meta.config.defaultLang || 'zh_CN';
 			}
 		}
 
@@ -292,11 +292,11 @@
 			plugins = require('../../../src/plugins'),
 			meta = require('../../../src/meta');
 
-		language = language || meta.config.defaultLang || 'en_GB';
+		language = language || meta.config.defaultLang || 'zh_CN';
 
 		if (!file.existsSync(path.join(__dirname, '../../language', language))) {
-			winston.warn('[translator] Language \'' + meta.config.defaultLang + '\' not found. Defaulting to \'en_GB\'');
-			language = 'en_GB';
+			winston.warn('[translator] Language \'' + meta.config.defaultLang + '\' not found. Defaulting to \'zh_CN\'');
+			language = 'zh_CN';
 		}
 
 		fs.readFile(path.join(__dirname, '../../language', language, filename + '.json'), function(err, data) {
