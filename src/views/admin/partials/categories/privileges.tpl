@@ -1,6 +1,6 @@
 					<table class="table table-striped table-hover privilege-table">
 						<tr>
-							<th colspan="2">User</th>
+							<th colspan="2">用户</th>
 							<!-- BEGIN privileges.labels.users -->
 							<th class="text-center">{privileges.labels.users.name}</th>
 							<!-- END privileges.labels.users -->
@@ -21,14 +21,14 @@
 						<!-- END privileges.users -->
 						<tr>
 							<td colspan="{privileges.columnCount}">
-								<button type="button" class="btn btn-primary pull-right" data-ajaxify="false" data-action="search.user"> Add User</button>
+								<button type="button" class="btn btn-primary pull-right" data-ajaxify="false" data-action="search.user"> 添加用户</button>
 							</td>
 						</tr>
 						<!-- ELSE -->
 						<tr>
 							<td colspan="{privileges.columnCount}">
-								<button type="button" class="btn btn-primary pull-right" data-ajaxify="false" data-action="search.user"> Add User</button>
-								No user-specific privileges in this category.
+								<button type="button" class="btn btn-primary pull-right" data-ajaxify="false" data-action="search.user"> 添加用户</button>
+								此类别中没有用户特定权限。
 							</td>
 						</tr>
 						<!-- ENDIF privileges.users.length -->
@@ -36,7 +36,7 @@
 
 					<table class="table table-striped table-hover privilege-table">
 						<tr>
-							<th colspan="2">Group</th>
+							<th colspan="2">组</th>
 							<!-- BEGIN privileges.labels.groups -->
 							<th class="text-center">{privileges.labels.groups.name}</th>
 							<!-- END privileges.labels.groups -->
@@ -56,15 +56,15 @@
 						<tr>
 							<td colspan="{privileges.columnCount}">
 								<div class="btn-toolbar">
-									<button type="button" class="btn btn-primary pull-right" data-ajaxify="false" data-action="search.group"> Add Group</button>
-									<button type="button" class="btn btn-info pull-right" data-ajaxify="false" data-action="copyToChildren"> Copy to Children</button>
+									<button type="button" class="btn btn-primary pull-right" data-ajaxify="false" data-action="search.group"> 添加 组</button>
+									<button type="button" class="btn btn-info pull-right" data-ajaxify="false" data-action="copyToChildren"> 复制 to Children</button>
 								</div>
 							</td>
 						</tr>
 					</table>
 					<div class="help-block">
-						If the <code>registered-users</code> group is granted a specific privilege, all other groups receive an
-						<strong>implicit privilege</strong>, even if they are not explicitly defined/checked. This implicit
-						privilege is shown to you because all users are part of the <code>registered-users</code> user group,
-						and so, privileges for additional groups need not be explicitly granted.
+						If the <code>注册用户</code> 组被授予特定特权, 所有其他组收到
+						<strong>隐性特权</strong>, 即使它们没有明确定义/检查. 这隐含
+特权显示给你，因为所有用户都部分 <code>注册用户</code> 用户组,
+						所以, 额外的特权群体不需要明确授予。
 					</div>

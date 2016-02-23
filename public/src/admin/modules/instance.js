@@ -9,8 +9,8 @@ define('admin/modules/instance', function() {
 		app.alert({
 			alert_id: 'instance_reload',
 			type: 'info',
-			title: 'Reloading... <i class="fa fa-spin fa-refresh"></i>',
-			message: 'NodeBB is reloading.',
+			title: '重载... <i class="fa fa-spin fa-refresh"></i>',
+			message: '论坛重新加载中.',
 			timeout: 5000
 		});
 
@@ -19,8 +19,8 @@ define('admin/modules/instance', function() {
 				app.alert({
 					alert_id: 'instance_reload',
 					type: 'success',
-					title: '<i class="fa fa-check"></i> Success',
-					message: 'NodeBB has successfully reloaded.',
+					title: '<i class="fa fa-check"></i> 成功',
+					message: '论坛已经成功地重新加载.',
 					timeout: 5000
 				});
 			} else {
@@ -43,7 +43,7 @@ define('admin/modules/instance', function() {
 			alert_id: 'instance_restart',
 			type: 'info',
 			title: 'Restarting... <i class="fa fa-spin fa-refresh"></i>',
-			message: 'NodeBB is restarting.',
+			message: '论坛重新启动.',
 			timeout: 5000
 		});
 
@@ -52,7 +52,7 @@ define('admin/modules/instance', function() {
 				alert_id: 'instance_restart',
 				type: 'success',
 				title: '<i class="fa fa-check"></i> Success',
-				message: 'NodeBB has successfully restarted.',
+				message: '论坛 已成功重新启动.',
 				timeout: 5000
 			});
 

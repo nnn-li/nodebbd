@@ -17,7 +17,7 @@
                 <div class="clearfix pull-right text-right">
                     <div class="btn-group">
                         <button data-cid="{categories.cid}" data-action="toggle" data-disabled="{categories.disabled}" class="btn <!-- IF categories.disabled -->btn-primary<!-- ELSE -->btn-danger<!-- ENDIF categories.disabled -->">
-                            <!-- IF categories.disabled -->Enable<!-- ELSE -->Disable<!-- ENDIF categories.disabled -->
+                            <!-- IF categories.disabled -->启用<!-- ELSE -->关闭<!-- ENDIF categories.disabled -->
                         </button>
                         <a href="./categories/{categories.cid}" class="btn btn-default">Edit</a>
                     </div>

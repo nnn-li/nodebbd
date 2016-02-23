@@ -94,7 +94,7 @@
 				<div class="panel-body">
 					<div class="btn-group btn-group-justified">
 						<div class="btn-group">
-							<button class="btn btn-primary save">保存</button>
+							<button class="btn btn-primary save">save</button>
 						</div>
 						<div class="btn-group">
 							<button class="btn btn-default revert">还原</button>
