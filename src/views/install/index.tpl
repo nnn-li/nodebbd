@@ -72,14 +72,14 @@
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
 						<label for="admin:password">密码</label>
-						<input type="password" class="form-control" name="admin:password" value="<!-- IF admin:password -->{admin:password}<!-- ENDIF admin:password -->" placeholder="Password" />
+						<input type="password" class="form-control" name="admin:password" minlength="6" value="<!-- IF admin:password -->{admin:password}<!-- ENDIF admin:password -->" placeholder="Password" />
 					</div>
 					<div class="col-sm-5 help-text" data-help="大于 6位字节 使用数字，符号，以及不同的情况的组合。您可以更改密码创建的严格管理控制面板中."></div>
 				</div>
 				<div class="row input-row">
 					<div class="col-sm-7 col-xs-12 input-field">
 						<label for="admin:passwordConfirm">确认密码</label>
-						<input type="password" class="form-control" name="admin:passwordConfirm" value="<!-- IF admin:passwordConfirm -->{admin:passwordConfirm}<!-- ENDIF admin:passwordConfirm -->" placeholder="Confirm Password" />
+						<input type="password" class="form-control" name="admin:passwordConfirm" minlength="6" value="<!-- IF admin:passwordConfirm -->{admin:passwordConfirm}<!-- ENDIF admin:passwordConfirm -->" placeholder="Confirm Password" />
 					</div>
 					<div class="col-sm-5 help-text" data-help="请确认您的密码."></div>
 				</div>
