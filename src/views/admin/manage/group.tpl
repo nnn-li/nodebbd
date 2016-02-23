@@ -3,27 +3,27 @@
 		<div class="col-md-9">
 			<div class="group-settings-form">
 				<fieldset>
-					<label for="change-group-name">Name</label>
+					<label for="change-group-name">名字</label>
 					<input type="text" class="form-control" id="change-group-name" placeholder="Group Name" value="{group.displayName}" <!-- IF group.system -->readonly<!-- ENDIF group.system -->/><br />
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-desc">Description</label>
+					<label for="change-group-desc">描述</label>
 					<input type="text" class="form-control" id="change-group-desc" placeholder="A short description about your group" value="{group.description}" /><br />
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-user-title">Title of Members</label>
+					<label for="change-group-user-title">会员称号</label>
 					<input type="text" class="form-control" id="change-group-user-title" placeholder="The title of users if they are a member of this group" value="{group.userTitle}"/><br />
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-icon">Group Icon</label><br/>
+					<label for="change-group-icon">组图标</label><br/>
 					<i id="group-icon" class="fa fa-2x <!-- IF group.icon -->{group.icon}<!-- ELSE -->fa-shield<!-- ENDIF group.icon -->" value="{group.icon}"></i><br />
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-label-color">Group Label Color</label>
+					<label for="change-group-label-color">组标签颜色</label>
 					<span id="group-label-preview" class="label label-default" style="background:<!-- IF group.labelColor -->{group.labelColor}<!-- ELSE -->#000000<!-- ENDIF group.labelColor -->;">{group.userTitle}</span>
 					<input id="change-group-label-color" placeholder="#0059b2" data-name="bgColor" value="{group.labelColor}" class="form-control" /><br />
 				</fieldset>
@@ -67,7 +67,7 @@
 				</fieldset>
 
 				<fieldset>
-					<label for="add-member">Add User to Group</label>
+					<label for="add-member">将用户添加到组</label>
 					<input type="text" class="form-control" id="group-details-search" placeholder="Search Users" />
 					<ul class="members user-list" id="group-details-search-results"></ul>
 
@@ -90,14 +90,14 @@
 
 		<div class="col-md-3 options acp-sidebar">
 			<div class="panel panel-default">
-				<div class="panel-heading">Groups Control Panel</div>
+				<div class="panel-heading">组控制面板</div>
 				<div class="panel-body">
 					<div class="btn-group btn-group-justified">
 						<div class="btn-group">
-							<button class="btn btn-primary save">Save</button>
+							<button class="btn btn-primary save">保存</button>
 						</div>
 						<div class="btn-group">
-							<button class="btn btn-default revert">Revert</button>
+							<button class="btn btn-default revert">还原</button>
 						</div>
 					</div>
 				</div>

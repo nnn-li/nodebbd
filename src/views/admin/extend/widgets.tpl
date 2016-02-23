@@ -28,12 +28,12 @@
 
 	<div class="col-md-5">
 		<div class="panel panel-default">
-			<div class="panel-heading">Available Widgets</div>
+			<div class="panel-heading">可用小工具</div>
 			<div class="panel-body">
 				<div class="available-widgets">
-					<p>Select a widget from the dropdown menu and then drag and drop it into a template's widget area on the left.</p>
+					<p>从下拉菜单中选择一个小部件，然后将其拖放到模板的小工具区域左侧.</p>
 					<!-- IF !widgets.length -->
-					<div class="alert alert-info">No widgets found! Activate the essential widgets plugin in the <a href="/admin/extend/plugins">plugins</a> control panel.</div>
+					<div class="alert alert-info">没有找到小部件！在激活插件的基本部件 <a href="/admin/extend/plugins">插件</a>控制面板.</div>
 					<!-- ENDIF !widgets.length -->
 					<p>
 						<select id="widget-selector" class="form-control">
@@ -63,28 +63,28 @@
 			</div>
 		</div>
 		<div class="panel panel-default">
-			<div class="panel-heading">Available Containers</div>
+			<div class="panel-heading">可用的容器s</div>
 			<div class="panel-body">
-				<p>Drag and drop on top of any active widget</p>
+				<p>拖动和任何活动部件的顶部下降</p>
 				<div class="available-containers">
 					<div class="containers">
 						<div class="pointer" style="padding: 20px; border: 1px dotted #dedede; margin-bottom: 20px;" data-container-html=" ">
 							None
 						</div>
 						<div class="well pointer" data-container-html='<div class="well">\{{body\}}</div>'>
-							Well
+							好
 						</div>
 						<div class="jumbotron pointer" data-container-html='<div class="jumbotron">\{{body\}}</div>'>
-							Jumbotron
+							超大屏幕
 						</div>
 						<div class="panel" data-container-html='<div class="panel panel-default"><div class="panel-body">\{{body\}}</div></div>'>
 							<div class="panel-body pointer">
-								Panel
+								面板
 							</div>
 						</div>
 						<div class="panel panel-default pointer" data-container-html='<div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">\{{title\}}</h3></div><div class="panel-body">\{{body\}}</div></div>'>
 							<div class="panel-heading">
-								Panel Header
+								面板头部
 								<div class="pull-right color-selector">
 									<button data-class="panel-default" class="btn btn-xs">&nbsp;&nbsp;</button>
 									<button data-class="panel-primary" class="btn btn-xs btn-primary">&nbsp;&nbsp;</button>
@@ -95,7 +95,7 @@
 								</div>
 							</div>
 							<div class="panel-body">
-								Panel Body
+								面板 Body
 							</div>
 						</div>
 
@@ -116,5 +116,5 @@
 </div>
 
 <button id="save" class="floating-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-	<i class="material-icons">save</i>
+	<i class="material-icons">保存</i>
 </button>

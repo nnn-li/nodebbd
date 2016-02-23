@@ -2,7 +2,7 @@
 <div class="post-cache">
 	<div class="col-lg-9">
 		<div class="panel panel-default">
-			<div class="panel-heading"><i class="fa fa-calendar-o"></i> Post Cache</div>
+			<div class="panel-heading"><i class="fa fa-calendar-o"></i> Post 缓存</div>
 			<div class="panel-body" data-next="{next}">
 
 				<label>Posts in Cache</label><br/>

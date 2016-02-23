@@ -1,7 +1,7 @@
 <!-- IMPORT admin/settings/header.tpl -->
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">General</div>
+	<div class="col-sm-2 col-xs-12 settings-header">常用</div>
 	<div class="col-sm-10 col-xs-12">
 		<form role="form">
 			<div class="checkbox">
@@ -12,33 +12,33 @@
 			</div>
 
 			<p class="help-block">
-				If enabled, joining of groups requires the approval of the group owner <em>(Default: enabled)</em>
+				如果启用，团体加入需要组所有者批准<em>(Default: enabled)</em>
 			</p>
 			<p class="help-block">
-				<strong>Beware!</strong> If this option is disabled and you have private groups, they automatically become public.
+				<strong>注意!</strong> 如果这个选项被禁用，你有私人团体，他们自动成为公共.
 			</p>
 
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="allowGroupCreation">
-					<span class="mdl-switch__label"><strong>Allow Group Creation</strong></span>
+					<span class="mdl-switch__label"><strong>允许组创建</strong></span>
 				</label>
 			</div>
 
 			<p class="help-block">
-				If enabled, users can create groups <em>(Default: disabled)</em>
+				如果启用，用户可以创建群组 <em>(Default: disabled)</em>
 			</p>
 		</form>
 	</div>
 </div>
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">Group Cover Image</div>
+	<div class="col-sm-2 col-xs-12 settings-header">组封面图片</div>
 	<div class="col-sm-10 col-xs-12">
 		<form role="form">
-			<label for="groups:defaultCovers"><strong>Default Cover Images</strong></label>
+			<label for="groups:defaultCovers"><strong>默认封面图片</strong></label>
 			<p class="help-block">
-				Add comma-separated default cover images for groups that don't have an uploaded cover image
+				添加逗号分隔的默认封面图像，没有上载封面图片组
 			</p>
 			<input type="text" class="form-control input-lg" id="groups:defaultCovers" data-field="groups:defaultCovers" value="{config.relative_path}/images/cover-default.png" placeholder="https://example.com/group1.png, https://example.com/group2.png" /><br />
 		</form>

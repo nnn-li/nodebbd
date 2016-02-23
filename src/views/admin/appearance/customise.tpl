@@ -7,7 +7,7 @@
 	<div class="tab-content">
 		<div class="tab-pane fade active in" id="custom-css">
 			<p>
-				Enter your own CSS declarations here, which will be applied after all other styles.
+				在这里输入你自己的CSS声明，将所有其他样式后应用。
 			</p>
 			<div id="customCSS"></div>
 			<input type="hidden" id="customCSS-holder" value="" data-field="customCSS" />

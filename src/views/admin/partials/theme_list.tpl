@@ -10,13 +10,13 @@
 
 			<!-- IF themes.url -->
 			<p>
-				<a href="{themes.url}" target="_blank">Homepage</a>
+				<a href="{themes.url}" target="_blank">设为首页</a>
 			</p>
 			<!-- ENDIF themes.url -->
 		</div>
 		<div class="mdl-card__actions mdl-card--border">
 			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-action="use">
-				<!-- IF themes.skin -->Select Skin<!-- ELSE -->Select Theme<!-- ENDIF themes.skin -->
+				<!-- IF themes.skin -->选择皮肤<!-- ELSE -->选择主题<!-- ENDIF themes.skin -->
 			</a>
 		</div>
 	</div>

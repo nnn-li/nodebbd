@@ -1,11 +1,11 @@
 <div class="registration panel panel-primary">
 	<div class="panel-heading">
-		Queue
+		队列
 	</div>
 	<!-- IF !users.length -->
 	<p class="panel-body">
 		There are no users in the registration queue. <br>
-		To enable this feature, go to <a href="{config.relative_path}/admin/settings/user">Settings -> User -> Authentication</a> and set
+		要启用此功能, go to <a href="{config.relative_path}/admin/settings/user">Settings -> User -> Authentication</a> and set
 		<strong>Registration Type</strong> to "Admin Approval".
 	</p>
 	<!-- ENDIF !users.length -->
@@ -62,9 +62,9 @@
 		Invitations
 	</div>
 	<p class="panel-body">
-		Below is a complete list of invitations sent. Use ctrl-f to search through the list by email or username.
+		以下是发出了邀请的完整列表。使用Ctrl-F通过电子邮件或用户名在列表中搜索。
 		<br><br>
-		The username will be displayed to the right of the emails for users who have redeemed their invitations.
+		用户名将会收到电子邮件的邀请用户。
 	</p>
 	<table class="table table-striped users-list">
 		<tr>

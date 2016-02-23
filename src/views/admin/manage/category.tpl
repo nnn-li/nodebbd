@@ -1,8 +1,8 @@
 <div class="row">
 	<form role="form" class="category" data-cid="{category.cid}">
 		<ul class="nav nav-pills">
-			<li class="active"><a href="#category-settings" data-toggle="tab">Category Settings</a></li>
-			<li><a href="#privileges" data-toggle="tab">Privileges</a></li>
+			<li class="active"><a href="#category-settings" data-toggle="tab">类别设置</a></li>
+			<li><a href="#privileges" data-toggle="tab">特权</a></li>
 		</ul>
 		<br />
 		<div class="tab-content">
@@ -10,29 +10,29 @@
 				<div class="col-md-9">
 					<div class="category-settings-form">
 						<fieldset>
-							<label for="cid-{category.cid}-name">Category Name</label>
+							<label for="cid-{category.cid}-name">分类名称</label>
 							<input id="cid-{category.cid}-name" type="text" class="form-control" placeholder="Category Name" data-name="name" value="{category.name}" /><br />
 
-							<label for="cid-{category.cid}-description">Category Description</label>
+							<label for="cid-{category.cid}-description">类别说明</label>
 							<input id="cid-{category.cid}-description" data-name="description" placeholder="Category Description" value="{category.description}" class="form-control category_description description"></input><br />
 						</fieldset>
 
 						<fieldset class="row">
 							<div class="col-sm-4 col-xs-12">
 								<div class="form-group">
-									<label for="cid-{category.cid}-bgColor">Background Colour</label>
+									<label for="cid-{category.cid}-bgColor">背景颜色</label>
 									<input id="cid-{category.cid}-bgColor" placeholder="#0059b2" data-name="bgColor" value="{category.bgColor}" class="form-control category_bgColor" />
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-12">
 								<div class="form-group">
-									<label for="cid-{category.cid}-color">Text Colour</label>
+									<label for="cid-{category.cid}-color">文字颜色</label>
 									<input id="cid-{category.cid}-color" placeholder="#fff" data-name="color" value="{category.color}" class="form-control category_color" />
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-12">
 								<div class="form-group">
-									<label for="cid-{category.cid}-imageClass">Background Image Size</label>
+									<label for="cid-{category.cid}-imageClass">背景图片大小</label>
 										<select id="cid-{category.cid}-imageClass" class="form-control" data-name="imageClass" data-value="{category.imageClass}">
 										<option value="auto">auto</option>
 										<option value="cover">cover</option>
@@ -42,19 +42,19 @@
 							</div><br />
 							<div class="col-sm-4 col-xs-12">
 								<div class="form-group">
-									<label for="cid-{category.cid}-class">Custom Class</label>
+									<label for="cid-{category.cid}-class">继承 Class</label>
 									<input id="cid-{category.cid}-class" type="text" class="form-control" placeholder="col-md-6 col-xs-6" data-name="class" value="{category.class}" />
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-12">
 								<div class="form-group">
-									<label for="cid-{category.cid}-numRecentReplies"># of Recent Replies</label>
+									<label for="cid-{category.cid}-numRecentReplies"># 最近回复的</label>
 									<input id="cid-{category.cid}-numRecentReplies" type="text" class="form-control" placeholder="2" data-name="numRecentReplies" value="{category.numRecentReplies}" />
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-12">
 								<div class="form-group">
-									<label for="cid-{category.cid}-link">External Link</label>
+									<label for="cid-{category.cid}-link">外部链接</label>
 									<input id="cid-{category.cid}-link" type="text" class="form-control" placeholder="http://domain.com" data-name="link" value="{category.link}" />
 								</div>
 							</div>
@@ -77,18 +77,18 @@
 							</div>
 							<div class="btn-group btn-group-justified">
 								<div class="btn-group">
-									<button type="button" data-cid="{category.cid}" data-name="image" data-value="{category.image}" class="btn btn-default upload-button"><i class="fa fa-upload"></i> Upload Image</button>
+									<button type="button" data-cid="{category.cid}" data-name="image" data-value="{category.image}" class="btn btn-default upload-button"><i class="fa fa-upload"></i> 上传图片</button>
 								</div>
 								<!-- IF category.image -->
 								<div class="btn-group">
-									<button class="btn btn-warning delete-image"><i data-name="icon" value="fa-times" class="fa fa-times"></i> Remove</button>
+									<button class="btn btn-warning delete-image"><i data-name="icon" value="fa-times" class="fa fa-times"></i> 清除</button>
 								</div>
 								<!-- ENDIF category.image -->
 							</div><br />
 
 							<fieldset>
 								<div class="form-group text-center">
-									<label for="cid-{category.cid}-parentCid">Parent Category</label>
+									<label for="cid-{category.cid}-parentCid">父类别</label>
 									<br/>
 									<div class="btn-group <!-- IF !category.parent.name -->hide<!-- ENDIF !category.parent.name -->">
 										<button type="button" class="btn btn-default" data-action="changeParent" data-parentCid="{category.parent.cid}"><i class="fa {category.parent.icon}"></i> {category.parent.name}</button>
@@ -99,7 +99,7 @@
 							</fieldset>
 
 							<hr />
-							<button class="btn btn-danger btn-block purge"><i class="fa fa-eraser"></i> Purge Category</button>
+							<button class="btn btn-danger btn-block purge"><i class="fa fa-eraser"></i> 清除分类</button>
 						</div>
 					</div>
 				</div>
@@ -107,12 +107,11 @@
 
 			<div class="tab-pane fade col-xs-12" id="privileges">
 				<p>
-					You can configure the access control privileges for this category in this section. Privileges can be granted on a per-user or
-					a per-group basis. You can add a new user to this table by searching for them in the form below.
+					你可以为这个类别中，此部分配置访问控制权限。权限可以基于每个用户授予或
+                每个组的基础。您可以通过以下表格为他们寻找一个新的用户添加到该表中。
 				</p>
 				<p class="text-warning">
-					<strong>Note</strong>: Privilege settings take effect immediately. It is not necessary to save the category after adjusting
-					these settings.
+					<strong>Note</strong>: 权限设置立即生效。这是没有必要保存的类别调整后这些设置。
 				</p>
 				<hr />
 				<div class="privilege-table-container">

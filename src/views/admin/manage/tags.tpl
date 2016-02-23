@@ -4,7 +4,7 @@
 		<div class="panel panel-default tag-management">
 			<div class="panel-body">
 				<!-- IF !tags.length -->
-				Your forum does not have any topics with tags yet.
+				您的论坛没有 have any topics with tags yet.
 				<!-- ENDIF !tags.length -->
 			
 				<div class="tag-list">
@@ -15,11 +15,11 @@
 						</div>
 						<div class="tag-modal hidden">
 							<div class="form-group">
-								<label for="bgColor">Background Colour</label>
+								<label for="bgColor">背景颜色</label>
 								<input id="bgColor" placeholder="#ffffff" data-name="bgColor" value="{tags.bgColor}" class="form-control category_bgColor" />
 							</div>
 							<div class="form-group">
-								<label for="color">Text Colour</label>
+								<label for="color">文字颜色</label>
 								<input id="color" placeholder="#a2a2a2" data-name="color" value="{tags.color}" class="form-control category_color" />
 							</div>
 						</div>
@@ -32,18 +32,18 @@
 
 	<div class="col-lg-3 acp-sidebar">
 		<div class="panel panel-default">
-			<div class="panel-heading">Modify Tag</div>
+			<div class="panel-heading">修改标签</div>
 			<div class="panel-body">
-				<p>Select tags via clicking and/or dragging, use shift to select multiple.</p>
-				<button class="btn btn-primary btn-block" id="modify">Modify Tags</button>
-				<button class="btn btn-warning btn-block" id="deleteSelected">Delete Tags</button>
+				<p>通过点击和/或拖动，使用Shift选择标签选择多个.</p>
+				<button class="btn btn-primary btn-block" id="modify">修改标签</button>
+				<button class="btn btn-warning btn-block" id="deleteSelected">删除标签</button>
 			</div>
 		</div>
 
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<input class="form-control" type="text" id="tag-search" placeholder="Search for tags..."/><br/>
-				Click <a href="/admin/settings/tags">here</a> to visit the tag settings page.
+				Click <a href="/admin/settings/tags">here</a> 访问标签设置页面.
 			</div>
 		</div>
 	</div>

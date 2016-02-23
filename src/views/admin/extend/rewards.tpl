@@ -1,7 +1,7 @@
 <div id="rewards">
 	<div class="col-lg-9">
 		<div class="panel panel-default">
-			<div class="panel-heading">Rewards</div>
+			<div class="panel-heading"> 授予悬赏</div>
 			<div class="panel-body">
 				<ul id="active">
 					<!-- BEGIN active -->
@@ -44,15 +44,15 @@
 								<form class="main">
 									<label for="claimable">Amount of times reward is claimable</label><br />
 									<input type="text" name="claimable" value="{active.claimable}" placeholder="1" />
-									<small>Enter 0 for infinite</small>
+									<small>无限输入 0</small>
 								</form>
 							</div>
 							<div class="panel-body inline-block">
-								<button class="btn btn-danger delete">Delete</button>
+								<button class="btn btn-danger delete">删除</button>
 								<!-- IF active.disabled -->
-								<button class="btn btn-success toggle">Enable</button>
+								<button class="btn btn-success toggle">启用</button>
 								<!-- ELSE -->
-								<button class="btn btn-warning toggle">Disable</button>
+								<button class="btn btn-warning toggle">关闭</button>
 								<!-- ENDIF active.disabled -->
 							</div>
 						</div>
@@ -66,10 +66,10 @@
 
 	<div class="col-lg-3 acp-sidebar">
 		<div class="panel panel-default">
-			<div class="panel-heading">Rewards Control</div>
+			<div class="panel-heading">悬赏 控制</div>
 			<div class="panel-body">
-				<button class="btn btn-success btn-md" id="new">New Reward</button>
-				<button class="btn btn-primary btn-md" id="save">Save Changes</button>
+				<button class="btn btn-success btn-md" id="new">发布悬赏</button>
+				<button class="btn btn-primary btn-md" id="save">保存更改</button>
 			</div>
 		</div>
 	</div>

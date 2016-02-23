@@ -1,55 +1,55 @@
 <!-- IMPORT admin/settings/header.tpl -->
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">Authentication</div>
+	<div class="col-sm-2 col-xs-12 settings-header">认证</div>
 	<div class="col-sm-10 col-xs-12">
 		<form role="form">
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="allowLocalLogin" checked>
-					<span class="mdl-switch__label"><strong>Allow local login</strong></span>
+					<span class="mdl-switch__label"><strong>允许本地登录</strong></span>
 				</label>
 			</div>
 
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="requireEmailConfirmation">
-					<span class="mdl-switch__label"><strong>Require Email Confirmation</strong></span>
+					<span class="mdl-switch__label"><strong>需要电子邮件确认</strong></span>
 				</label>
 			</div>
 
 			<div class="form-group form-inline">
-				<label for="emailConfirmInterval">User may not resend a confirmation email until</label>
+				<label for="emailConfirmInterval">用户不得重新发送确认邮件到</label>
 				<input class="form-control" data-field="emailConfirmInterval" type="number" id="emailConfirmInterval" placeholder="Default: 10" value="10" />
-				<label for="emailConfirmInterval">minutes have elapsed</label>
+				<label for="emailConfirmInterval">分钟过去</label>
 			</div>
 
 			<div class="form-group">
 				<label>Allow login with</label>
 				<select class="form-control" data-field="allowLoginWith">
-					<option value="username-email">Username or Email</option>
-					<option value="username">Username Only</option>
-					<option value="email">Email Only</option>
+					<option value="username-email">用户名或电子邮件</option>
+					<option value="username">只有用户名</option>
+					<option value="email">只有邮箱</option>
 				</select>
 			</div>
 
 			<div class="form-group">
-				<label>Registration Type</label>
+				<label>注册类型</label>
 				<select class="form-control" data-field="registrationType">
-					<option value="normal">Normal</option>
-					<option value="admin-approval">Admin Approval</option>
-					<option value="invite-only">Invite Only</option>
-					<option value="admin-invite-only">Admin Invite Only</option>
-					<option value="disabled">No registration</option>
+					<option value="normal">正常</option>
+					<option value="admin-approval">管理员批准</option>
+					<option value="invite-only">仅邀请</option>
+					<option value="admin-invite-only">只管理员邀请</option>
+					<option value="disabled">无需注册</option>
 				</select>
 			</div>
 
 			<div class="form-group">
-				<label>Maximum Invitations per User</label>
+				<label>每个用户最多邀请</label>
 				<input type="number" class="form-control" data-field="maximumInvites" placeholder="0">
 				<p class="help-block">
-					0 for no restriction. Admins get infinite invitations<br>
-					Only applicable for "Invite Only"
+					0为不限制。管理员获得无限邀请<br>
+					仅适用于“邀请只有”
 				</p>
 			</div>
 		</form>
@@ -57,31 +57,31 @@
 </div>
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">Account Settings</div>
+	<div class="col-sm-2 col-xs-12 settings-header">帐户设置</div>
 	<div class="col-sm-10 col-xs-12">
 		<form>
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="username:disableEdit">
-					<span class="mdl-switch__label"><strong>Disable username changes</strong></span>
+					<span class="mdl-switch__label"><strong>禁止改变用户名</strong></span>
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="email:disableEdit">
-					<span class="mdl-switch__label"><strong>Disable email changes</strong></span>
+					<span class="mdl-switch__label"><strong>禁用电子邮件的改变</strong></span>
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="allowAccountDelete" checked>
-					<span class="mdl-switch__label"><strong>Allow account deletion</strong></span>
+					<span class="mdl-switch__label"><strong>允许帐户删除</strong></span>
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="privateUserInfo">
-					<span class="mdl-switch__label"><strong>Make user info private</strong></span>
+					<span class="mdl-switch__label"><strong>使用户私人信息</strong></span>
 				</label>
 			</div>
 		</form>
@@ -89,13 +89,13 @@
 </div>
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">Themes</div>
+	<div class="col-sm-2 col-xs-12 settings-header">主题</div>
 	<div class="col-sm-10 col-xs-12">
 		<form>
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="disableCustomUserSkins">
-					<span class="mdl-switch__label"><strong>Prevent users from choosing a custom skin</strong></span>
+					<span class="mdl-switch__label"><strong>Prevent users from 选择一个自定义皮肤</strong></span>
 				</label>
 			</div>
 		</form>
@@ -103,26 +103,26 @@
 </div>
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">Account Protection</div>
+	<div class="col-sm-2 col-xs-12 settings-header">账户保护</div>
 	<div class="col-sm-10 col-xs-12">
 		<form>
 			<div class="form-group">
-				<label for="loginAttempts">Login attempts per hour</label>
+				<label for="loginAttempts">每小时登录尝试</label>
 				<input id="loginAttempts" type="text" class="form-control" data-field="loginAttempts" placeholder="5" />
 				<p class="help-block">
-					If login attempts to a user&apos;s account exceeds this threshold, that account will be locked for a pre-configured amount of time
+					如果登录尝试到用户的账户超过此阈值，该帐户将被锁定的时间预先配置的量
 				</p>
 			</div>
 			<div class="form-group">
-				<label for="lockoutDuration">Account Lockout Duration (minutes)</label>
+				<label for="lockoutDuration">帐户锁定时间（分钟）</label>
 				<input id="lockoutDuration" type="text" class="form-control" data-field="lockoutDuration" placeholder="60" />
 			</div>
 			<div class="form-group">
-				<label>Days to remember user login sessions</label>
+				<label>Days to 记住用户的登录会话</label>
 				<input type="text" class="form-control" data-field="loginDays" placeholder="14" />
 			</div>
 			<div class="form-group">
-				<label>Force password reset after a set number of days</label>
+				<label>在设定的天数后强制重置密码</label>
 				<input type="text" class="form-control" data-field="passwordExpiryDays" placeholder="0" />
 			</div>
 		</form>
@@ -130,27 +130,27 @@
 </div>
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">User Registration</div>
+	<div class="col-sm-2 col-xs-12 settings-header">用户注册</div>
 	<div class="col-sm-10 col-xs-12">
 		<form>
 			<div class="form-group">
-				<label>Minimum Username Length</label>
+				<label>最小长度用户名</label>
 				<input type="text" class="form-control" value="2" data-field="minimumUsernameLength">
 			</div>
 			<div class="form-group">
-				<label>Maximum Username Length</label>
+				<label>最大用户名长度</label>
 				<input type="text" class="form-control" value="16" data-field="maximumUsernameLength">
 			</div>
 			<div class="form-group">
-				<label>Minimum Password Length</label>
+				<label>最小密码长度</label>
 				<input type="text" class="form-control" value="6" data-field="minimumPasswordLength">
 			</div>
 			<div class="form-group">
-				<label>Maximum About Me Length</label>
+				<label>最大关于我们长度</label>
 				<input type="text" class="form-control" value="500" data-field="maximumAboutMeLength">
 			</div>
 			<div class="form-group">
-				<label>Forum Terms of Use <small>(Leave blank to disable)</small></label>
+				<label>论坛使用条款 <small>(留空禁用)</small></label>
 				<textarea class="form-control" data-field="termsOfUse"></textarea>
 			</div>
 		</form>
@@ -158,11 +158,11 @@
 </div>
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">User Search</div>
+	<div class="col-sm-2 col-xs-12 settings-header">用户搜索</div>
 	<div class="col-sm-10 col-xs-12">
 		<form>
 			<div class="form-group">
-				<label>Number of results to display</label>
+				<label>结果数显示</label>
 				<input type="text" class="form-control" value="24" data-field="userSearchResultsPerPage">
 			</div>
 
@@ -171,7 +171,7 @@
 </div>
 
 <div class="row">
-	<div class="col-sm-2 col-xs-12 settings-header">Default User Settings</div>
+	<div class="col-sm-2 col-xs-12 settings-header">默认用户设置</div>
 	<div class="col-sm-10 col-xs-12">
 		<form>
 			<div class="checkbox">
@@ -192,9 +192,9 @@
 				<label>[[user:digest_label]]</label>
 				<select class="form-control" data-field="dailyDigestFreq">
 					<option value="off">Off</option>
-					<option value="day">Daily</option>
-					<option value="week">Weekly</option>
-					<option value="month">Monthly</option>
+					<option value="day">每日</option>
+					<option value="week">每周</option>
+					<option value="month">每月</option>
 				</select>
 			</div>
 

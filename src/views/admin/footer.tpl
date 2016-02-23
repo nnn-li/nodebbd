@@ -7,12 +7,12 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 id="myModalLabel">Upload Picture</h3>
+					<h3 id="myModalLabel">上传照片</h3>
 				</div>
 				<div class="modal-body">
 					<form id="uploadForm" action="" method="post" enctype="multipart/form-data">
 						<div class="form-group">
-							<label for="userPhoto">Upload a picture</label>
+							<label for="userPhoto">上传图片</label>
 							<input type="file" id="userPhotoInput" name="files[]">
 							<p class="help-block"></p>
 						</div>
@@ -21,7 +21,7 @@
 
 					<div id="upload-progress-box" class="progress progress-striped">
 						<div id="upload-progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0">
-							<span class="sr-only"> success</span>
+							<span class="sr-only"> 成功</span>
 						</div>
 					</div>
 
@@ -30,8 +30,8 @@
 					<div id="alert-error" class="alert alert-danger hide"></div>
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
-					<button id="pictureUploadSubmitBtn" class="btn btn-primary">Upload Picture</button>
+					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+					<button id="pictureUploadSubmitBtn" class="btn btn-primary">上传照片</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
