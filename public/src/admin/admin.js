@@ -86,7 +86,7 @@
 
 	function setupRestartLinks() {
 		$('.restart').off('click').on('click', function() {
-			bootbox.confirm('Are you sure you wish to restart NodeBB?', function(confirm) {
+			bootbox.confirm('你确定要重新启动论坛？', function(confirm) {
 				if (confirm) {
 					require(['admin/modules/instance'], function(instance) {
 						instance.restart();
