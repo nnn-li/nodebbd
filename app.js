@@ -60,8 +60,8 @@ loadConfig();
 if (!process.send) {
 	// If run using `node app`, log GNU copyright info along with server info
 	winston.info('NodeBB v' + nconf.get('version') + ' Copyright (C) 2013-2014 NodeBB Inc.');
-	winston.info('This program comes with ABSOLUTELY NO WARRANTY.');
-	winston.info('This is free software, and you are welcome to redistribute it under certain conditions.');
+	winston.info('本节目绝对没有担保.');
+	winston.info('这是自由软件，欢迎你重新分配它在一定条件下.');
 	winston.info('');
 }
 

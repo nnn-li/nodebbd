@@ -75,16 +75,16 @@ define('admin/settings', ['uploader', 'sounds'], function(uploader, sounds) {
 					return app.alert({
 						alert_id: 'config_status',
 						timeout: 2500,
-						title: 'Changes Not Saved',
-						message: 'NodeBB encountered a problem saving your changes',
+						title: '更改未保存',
+						message: '论坛遇到保存更改问题',
 						type: 'danger'
 					});
 				}
 				app.alert({
 					alert_id: 'config_status',
 					timeout: 2500,
-					title: 'Changes Saved',
-					message: 'Your changes to the NodeBB configuration have been saved.',
+					title: '保存更改',
+					message: '您对论坛的配置更改已保存.',
 					type: 'success'
 				});
 			});

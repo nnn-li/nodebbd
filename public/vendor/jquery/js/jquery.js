@@ -3528,7 +3528,7 @@
 			// table row; if so, offsetWidth/Height are not reliable for use when
 			// determining if an element has been hidden directly using
 			// display:none (it is still safe to use offsets if a parent element is
-			// hidden; don safety goggles and see bug #4512 for more information).
+			// hidden; don safety goggles and see bug #4512 了解更多信息).
 			div.innerHTML = "<table><tr><td></td><td>t</td></tr></table>";
 			tds = div.getElementsByTagName("td");
 			tds[0].style.cssText = "padding:0;margin:0;border:0;display:none";
@@ -3710,7 +3710,7 @@
 		var thisCache, i,
 			isNode = elem.nodeType,
 
-			// See jQuery.data for more information
+			// See jQuery.data 了解更多信息
 			cache = isNode ? jQuery.cache : elem,
 			id = isNode ? elem[jQuery.expando] : jQuery.expando;
 
@@ -3765,7 +3765,7 @@
 			}
 		}
 
-		// See jQuery.data for more information
+		// See jQuery.data 了解更多信息
 		if (!pvt) {
 			delete cache[id].data;
 

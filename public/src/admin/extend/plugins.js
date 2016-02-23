@@ -19,13 +19,13 @@ define('admin/extend/plugins', function() {
 			pluginID = $(this).parents('li').attr('data-plugin-id');
 			var btn = $(this);
 			socket.emit('admin.plugins.toggleActive', pluginID, function(err, status) {
-				btn.html('<i class="fa fa-power-off"></i> ' + (status.active ? 'Deactivate' : 'Activate'));
+				btn.html('<i class="fa fa-power-off"></i> ' + (status.active ? '停用' : '启用'));
 				btn.toggleClass('btn-warning', status.active).toggleClass('btn-success', !status.active);
 
 				app.alert({
 					alert_id: 'plugin_toggled',
 					title: 'Plugin ' + (status.active ? 'Enabled' : 'Disabled'),
-					message: status.active ? 'Please reload your NodeBB to fully activate this plugin' : 'Plugin successfully deactivated',
+					message: status.active ? '请重新加载论坛充分激活这个插件' : '插件成功停用',
 					type: status.active ? 'warning' : 'success',
 					timeout: 5000,
 					clickfn: function() {
@@ -199,8 +199,8 @@ define('admin/extend/plugins', function() {
 
 			app.alert({
 				alert_id: 'plugin_toggled',
-				title: 'Plugin ' + (pluginData.installed ? 'Installed' : 'Uninstalled'),
-				message: pluginData.installed ? 'Plugin successfully installed, please activate the plugin.' : 'The plugin has been successfully deactivated and uninstalled.',
+				title: 'Plugin ' + (pluginData.installed ? '安装' : '卸载'),
+				message: pluginData.installed ? '插件安装成功，请激活插件.' : '该插件已成功停用，卸载.',
 				type: 'info',
 				timeout: 5000
 			});

@@ -184,7 +184,7 @@ drag = $special.drag = {
 				event.target = dd.target; // force target from "mousedown" event (fix distance issue)
 				drag.hijack( event, "dragstart", dd ); // trigger "dragstart"
 				if ( dd.propagates ) // "dragstart" not rejected
-					dd.dragging = true; // activate interaction
+					dd.dragging = true; // 启用 interaction
 			// mousemove, dragging
 			case 'touchmove':
 				event.preventDefault();
@@ -217,7 +217,7 @@ drag = $special.drag = {
 				// if suppressing click events...
 				if ( dd.click === false && dd.dragging )
 					$.data( dd.mousedown, "suppress.click", new Date().getTime() + 5 );
-				dd.dragging = drag.touched = false; // deactivate element	
+				dd.dragging = drag.touched = false; // 关闭 element	
 				break;
 		}
 	},

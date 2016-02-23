@@ -4,7 +4,7 @@
 							<!-- IF installed.isTheme -->
 							<a href="{config.relative_path}/admin/appearance/themes" class="btn btn-info">主题</a>
 							<!-- ELSE -->
-							<button data-action="toggleActive" class="btn <!-- IF installed.active --> btn-warning<!-- ELSE --> btn-success<!-- ENDIF installed.active -->"><i class="fa fa-power-off"></i> <!-- IF installed.active -->Deactivate<!-- ELSE -->Activate<!-- ENDIF installed.active --></button>
+							<button data-action="toggleActive" class="btn <!-- IF installed.active --> btn-warning<!-- ELSE --> btn-success<!-- ENDIF installed.active -->"><i class="fa fa-power-off"></i> <!-- IF installed.active -->停用<!-- ELSE -->启用<!-- ENDIF installed.active --></button>
 							<!-- ENDIF installed.isTheme -->
 
 							<button data-action="toggleInstall" data-installed="1" class="btn btn-danger"><i class="fa fa-trash-o"></i> 卸载</button>
@@ -15,12 +15,12 @@
 						<!-- IF installed.description -->
 						<p>{installed.description}</p>
 						<!-- ENDIF installed.description -->
-						<!-- IF installed.outdated --><i class="fa fa-exclamation-triangle text-danger"></i> <!-- ENDIF installed.outdated --><small>Installed <strong class="currentVersion">{installed.version}</strong> | Latest <strong class="latestVersion">{installed.latest}</strong></small>
+						<!-- IF installed.outdated --><i class="fa fa-exclamation-triangle text-danger"></i> <!-- ENDIF installed.outdated --><small>安装 <strong class="currentVersion">{installed.version}</strong> | 最新 <strong class="latestVersion">{installed.latest}</strong></small>
 						<!-- IF installed.outdated -->
 							<button data-action="upgrade" class="btn btn-success btn-xs"><i class="fa fa-download"></i> 升级</button>
 						<!-- ENDIF installed.outdated -->
 						<!-- IF installed.url -->
-						<p>For more information: <a target="_blank" href="{installed.url}">{installed.url}</a></p>
+						<p>了解更多信息: <a target="_blank" href="{installed.url}">{installed.url}</a></p>
 						<!-- ENDIF installed.url -->
 					</li>
 					<!-- ENDIF !installed.error -->

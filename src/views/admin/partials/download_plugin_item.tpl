@@ -13,6 +13,6 @@
 						<small>Latest <strong class="latestVersion">{download.latest}</strong></small>
 
 						<!-- IF download.url -->
-						<p>For more information: <a target="_blank" href="{download.url}">{download.url}</a></p>
+						<p>了解更多信息: <a target="_blank" href="{download.url}">{download.url}</a></p>
 						<!-- ENDIF download.url -->
 					</li>

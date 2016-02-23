@@ -10,12 +10,12 @@ admin.get = function(callback) {
 	async.parallel({
 		areas: function(next) {
 			var defaultAreas = [
-				{ name: 'Global Sidebar', template: 'global', location: 'sidebar' },
-				{ name: 'Global Header', template: 'global', location: 'header' },
-				{ name: 'Global Footer', template: 'global', location: 'footer' },
+				{ name: '全局侧边栏', template: 'global', location: 'sidebar' },
+				{ name: '全局头部', template: 'global', location: 'header' },
+				{ name: '全局底部', template: 'global', location: 'footer' },
 
-				{ name: 'Group Page (Left)', template: 'groups/details.tpl', location: 'left'},
-				{ name: 'Group Page (Right)', template: 'groups/details.tpl', location: 'right'}
+				{ name: '全局页面 (Left)', template: 'groups/details.tpl', location: 'left'},
+				{ name: '全局页面 (Right)', template: 'groups/details.tpl', location: 'right'}
 			];
 
 			plugins.fireHook('filter:widgets.getAreas', defaultAreas, next);
@@ -27,7 +27,7 @@ admin.get = function(callback) {
 		if (err) {
 			return callback(err);
 		}
-		widgetData.areas.push({ name: 'Draft Zone', template: 'global', location: 'drafts' });
+		widgetData.areas.push({ name: '开发区草案', template: 'global', location: 'drafts' });
 
 		async.each(widgetData.areas, function(area, next) {
 			require('./index').getArea(area.template, area.location, function(err, areaData) {
@@ -42,7 +42,7 @@ admin.get = function(callback) {
 			for (var w in widgetData.widgets) {
 				if (widgetData.widgets.hasOwnProperty(w)) {
 					// if this gets anymore complicated, it needs to be a template
-					widgetData.widgets[w].content += "<br /><label>Title:</label><input type=\"text\" class=\"form-control\" name=\"title\" placeholder=\"Title (only shown on some containers)\" /><br /><label>Container:</label><textarea rows=\"4\" class=\"form-control container-html\" name=\"container\" placeholder=\"Drag and drop a container or enter HTML here.\"></textarea><div class=\"checkbox\"><label><input name=\"hide-guests\" type=\"checkbox\"> Hide from anonymous users?</label></div><div class=\"checkbox\"><label><input name=\"hide-registered\" type=\"checkbox\"> Hide from registered users?</input></label></div>";
+					widgetData.widgets[w].content += "<br /><label>Title:</label><input type=\"text\" class=\"form-control\" name=\"title\" placeholder=\"标题（仅适用于某些容器中所示)\" /><br /><label>Container:</label><textarea rows=\"4\" class=\"form-control container-html\" name=\"container\" placeholder=\"拖放一个容器或在此处输入HTML.\"></textarea><div class=\"checkbox\"><label><input name=\"hide-guests\" type=\"checkbox\"> 来自匿名用户隐藏?</label></div><div class=\"checkbox\"><label><input name=\"hide-registered\" type=\"checkbox\"> Hide from registered users?</input></label></div>";
 				}
 			}
 

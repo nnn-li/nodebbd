@@ -30,8 +30,8 @@
     "user_started_following_you_dual": "<strong>%1</strong> and <strong>%2</strong> started following you.",
     "user_started_following_you_multiple": "<strong>%1</strong> and %2 others started following you.",
     "new_register": "<strong>%1</strong> sent a registration request.",
-    "email-confirmed": "Email Confirmed",
-    "email-confirmed-message": "Thank you for validating your email. Your account is now fully activated.",
-    "email-confirm-error-message": "There was a problem validating your email address. Perhaps the code was invalid or has expired.",
-    "email-confirm-sent": "Confirmation email sent."
+    "email-confirmed": "电子邮件确认",
+    "email-confirmed-message": "感谢您验证您的电子邮件。您的帐户现已全面启动.",
+    "email-confirm-error-message": "有验证您的电子邮件地址有问题。也许码无效或已过期.",
+    "email-confirm-sent": "确认电子邮件发送."
 }

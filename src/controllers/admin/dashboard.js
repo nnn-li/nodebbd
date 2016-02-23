@@ -19,14 +19,14 @@ dashboardController.get = function(req, res, next) {
 			var notices = [
 				{
 					done: !meta.reloadRequired,
-					doneText: 'Reload not required',
-					notDoneText:'Reload required'
+					doneText: '不要求刷新',
+					notDoneText:'需要重新加载'
 				},
 				{
 					done: plugins.hasListeners('filter:search.query'),
-					doneText: 'Search Plugin Installed',
-					notDoneText:'Search Plugin not installed',
-					tooltip: 'Install a search plugin from the plugin page in order to activate search functionality',
+					doneText: '搜索插件安装',
+					notDoneText:'没有安装搜索插件',
+					tooltip: '为了激活搜索功能从安装插件页面搜索插件',
 					link:'/admin/extend/plugins'
 				}
 			];

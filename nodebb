@@ -169,8 +169,8 @@ switch(process.argv[2]) {
 		process.stdout.write('\t' + 'restart'.yellow + '\tRestarts NodeBB\n');
 		process.stdout.write('\t' + 'log'.yellow + '\tOpens the logging interface (useful for debugging)\n');
 		process.stdout.write('\t' + 'setup'.yellow + '\tRuns the NodeBB setup script\n');
-		process.stdout.write('\t' + 'reset'.yellow + '\tDisables all plugins, restores the default theme.\n');
-		process.stdout.write('\t' + 'activate'.yellow + '\tActivate a plugin on start up.\n');
+		process.stdout.write('\t' + 'reset'.yellow + '\t禁用所有插件，恢复默认主题.\n');
+		process.stdout.write('\t' + 'activate'.yellow + '\t在启动时激活插件.\n');
 		process.stdout.write('\t' + 'plugins'.yellow + '\tList all plugins that have been installed.\n');
 		process.stdout.write('\t' + 'upgrade'.yellow + '\tRun NodeBB upgrade scripts, ensure packages are up-to-date\n');
 		process.stdout.write('\t' + 'dev'.yellow + '\tStart NodeBB in interactive development mode\n');

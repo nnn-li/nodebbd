@@ -60,7 +60,7 @@
 					<div class="panel-heading">更新</div>
 					<div class="panel-body">
 						<div class="alert alert-info version-check">
-							<p>You are running <strong>NodeBB v<span id="version">{version}</span></strong>.</p>
+							<p>您当前的版本是 <strong> v<span id="version">{version}</span></strong>.</p>
 						</div>
 						<p>
 							务必确保您的NodeBB是最新的最新的安全补丁和漏洞修复。
@@ -71,7 +71,7 @@
 
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">Notices</div>
+					<div class="panel-heading">通告</div>
 					<div class="panel-body">
 					<!-- BEGIN notices -->
 						<div>
