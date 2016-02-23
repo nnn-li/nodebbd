@@ -1,6 +1,6 @@
 <ul class="nav nav-pills">
-	<li class="active"><a href="#installed" data-toggle="tab">Installed Plugins</a></li>
-	<li><a href="#download" data-toggle="tab">Download Plugins</a></li>
+	<li class="active"><a href="#installed" data-toggle="tab">以安装的插件</a></li>
+	<li><a href="#download" data-toggle="tab">下载插件</a></li>
 </ul>
 <br />
 

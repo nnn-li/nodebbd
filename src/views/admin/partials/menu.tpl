@@ -53,17 +53,17 @@
 	</section>
 
 	<section class="menu-section">
-		<h3 class="menu-section-title">Extend</h3>
+		<h3 class="menu-section-title">扩展</h3>
 		<ul class="menu-section-list">
-			<li><a href="{relative_path}/admin/extend/plugins">Plugins</a></li>
-			<li><a href="{relative_path}/admin/extend/widgets">Widgets</a></li>
-			<li><a href="{relative_path}/admin/extend/rewards">Rewards</a></li>
+			<li><a href="{relative_path}/admin/extend/plugins">插件</a></li>
+			<li><a href="{relative_path}/admin/extend/widgets">小工具</a></li>
+			<li><a href="{relative_path}/admin/extend/rewards">rewards</a></li>
 		</ul>
 	</section>
 
 	<!-- IF authentication.length -->
 	<section class="menu-section">
-		<h3 class="menu-section-title">Social Authentication</h3>
+		<h3 class="menu-section-title">Social 认证</h3>
 		<ul class="menu-section-list">
 			<!-- BEGIN authentication -->
 			<li>
@@ -76,7 +76,7 @@
 
 	<!-- IF plugins.length -->
 	<section class="menu-section">
-		<h3 class="menu-section-title">Plugins</h3>
+		<h3 class="menu-section-title">插件</h3>
 		<ul class="menu-section-list">
 			<!-- BEGIN plugins -->
 			<li>
@@ -202,10 +202,10 @@
 				</ul>
 			</li>
 			<li class="dropdown menu-item">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Extend</a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">扩展</a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="{relative_path}/admin/extend/plugins">Plugins</a></li>
-					<li><a href="{relative_path}/admin/extend/widgets">Widgets</a></li>
+					<li><a href="{relative_path}/admin/extend/plugins">插件</a></li>
+					<li><a href="{relative_path}/admin/extend/widgets">小工具</a></li>
 					<li><a href="{relative_path}/admin/extend/rewards">Rewards</a></li>
 				</ul>
 			</li>
