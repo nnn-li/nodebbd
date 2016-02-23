@@ -2,7 +2,7 @@
 	<section class="menu-section">
 		<h3 class="menu-section-title">常用</h3>
 		<ul class="menu-section-list">
-			<a href="{relative_path}/admin/general/dashboard">仪表盘</a>
+			<a href="{relative_path}/admin/general/dashboard">控制台</a>
 			<li><a href="{relative_path}/admin/general/homepage">首页</a></li>
 			<li><a href="{relative_path}/admin/general/navigation">导航</a></li>
 			<li><a href="{relative_path}/admin/general/languages">语言</a></li>
@@ -151,7 +151,7 @@
 		</ul>
 		<ul id="main-menu">
 			<li class="menu-item">
-				<a href="{relative_path}/admin/general/dashboard">仪表盘</a>
+				<a href="{relative_path}/admin/general/dashboard">控制台</a>
 			</li>
 			<li class="dropdown menu-item">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用</a>

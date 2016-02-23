@@ -2,7 +2,7 @@
 <li data-uid="{users.uid}">
 	<div class="btn-group pull-right">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			特权 <span class="caret"></span>
+			权限 <span class="caret"></span>
 		</button>
 		<ul class="dropdown-menu" role="menu">
 			<li role="presentation"><a href="#" data-priv="find" class="<!-- IF users.privileges.find -->active<!-- ENDIF users.privileges.find -->">查找类别</a></li>

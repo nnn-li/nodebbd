@@ -59,7 +59,7 @@
 
 <div class="invitations panel panel-success">
 	<div class="panel-heading">
-		Invitations
+		邀请
 	</div>
 	<p class="panel-body">
 		以下是发出了邀请的完整列表。使用Ctrl-F通过电子邮件或用户名在列表中搜索。

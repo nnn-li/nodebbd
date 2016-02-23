@@ -249,7 +249,7 @@ define('admin/manage/category', [
 			}, function(html) {
 				var modal = bootbox.dialog({
 					message: html,
-					title: 'Set Parent Category'
+					title: '设置父类别'
 				});
 
 				modal.find('li[data-cid]').on('click', function() {
@@ -341,7 +341,7 @@ define('admin/manage/category', [
 			if (err) {
 				return app.alertError(err.message);
 			}
-			app.alertSuccess('Privileges copied!');
+			app.alertSuccess('复制权限!');
 		});
 	};
 

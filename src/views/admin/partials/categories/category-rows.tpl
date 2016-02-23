@@ -19,7 +19,7 @@
                         <button data-cid="{categories.cid}" data-action="toggle" data-disabled="{categories.disabled}" class="btn <!-- IF categories.disabled -->btn-primary<!-- ELSE -->btn-danger<!-- ENDIF categories.disabled -->">
                             <!-- IF categories.disabled -->启用<!-- ELSE -->关闭<!-- ENDIF categories.disabled -->
                         </button>
-                        <a href="./categories/{categories.cid}" class="btn btn-default">Edit</a>
+                        <a href="./categories/{categories.cid}" class="btn btn-default">编辑</a>
                     </div>
                 </div>
             </div>

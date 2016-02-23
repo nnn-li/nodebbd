@@ -18,11 +18,11 @@ module.exports = function(privileges) {
 		// Method used in admin/category controller to show all users/groups with privs in that given cid
 
 		var privilegeLabels = [
-			{name: 'Find category'},
-			{name: 'Access & Read'},
-			{name: 'Create Topics'},
-			{name: 'Reply to Topics'},
-			{name: 'Purge'},
+			{name: '查找类别'},
+			{name: '访问和阅读'},
+			{name: '创建主题'},
+			{name: '回复主题'},
+			{name: '清除'},
 			{name: 'Moderate'}
 		];
 

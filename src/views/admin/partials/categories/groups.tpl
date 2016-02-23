@@ -2,7 +2,7 @@
 <li data-name="{groups.displayName}">
 	<div class="btn-group pull-right">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			特权 <span class="caret"></span>
+			权限 <span class="caret"></span>
 		</button>
 		<ul class="dropdown-menu" role="menu">
 			<li role="presentation"><a href="#" data-priv="groups:find" class="<!-- IF groups.privileges.groups:find -->active<!-- ENDIF groups.privileges.groups:find -->">查找类别</a></li>

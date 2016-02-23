@@ -89,14 +89,14 @@ define('admin/appearance/themes', function() {
 		$('[data-theme]')
 			.removeClass('selected')
 			.find('[data-action="use"]')
-				.html('Select Theme')
+				.html('选择主题')
 				.removeClass('btn-success')
 				.addClass('btn-primary');
 
 		$('[data-theme="' + themeId + '"]')
 			.addClass('selected')
 			.find('[data-action="use"]')
-				.html('Current Theme')
+				.html('当前主题')
 				.removeClass('btn-primary')
 				.addClass('btn-success');
 	}
