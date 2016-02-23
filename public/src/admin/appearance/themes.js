@@ -28,8 +28,8 @@ define('admin/appearance/themes', function() {
 					app.alert({
 						alert_id: 'admin:theme',
 						type: 'info',
-						title: 'Theme Changed',
-						message: 'Please restart your NodeBB to fully activate this theme',
+						title: '主题变更',
+						message: '请重新启动论坛充分激活这个主题',
 						timeout: 5000,
 						clickfn: function() {
 							socket.emit('admin.restart');
@@ -40,7 +40,7 @@ define('admin/appearance/themes', function() {
 		});
 
 		$('#revert_theme').on('click', function() {
-			bootbox.confirm('Are you sure you wish to restore the default NodeBB theme?', function(confirm) {
+			bootbox.confirm('您确定要恢复默认主题?', function(confirm) {
 				if (confirm) {
 					socket.emit('admin.themes.set', {
 						type: 'local',
@@ -53,8 +53,8 @@ define('admin/appearance/themes', function() {
 						app.alert({
 							alert_id: 'admin:theme',
 							type: 'success',
-							title: 'Theme Changed',
-							message: 'You have successfully reverted your NodeBB back to it\'s default theme.',
+							title: '主题变更',
+							message: '您已成功重置您的论坛回回到默认主题.',
 							timeout: 3500
 						});
 					});
@@ -70,7 +70,7 @@ define('admin/appearance/themes', function() {
 			var instListEl = $('#installed_themes');
 
 			if (!themes.length) {
-				instListEl.append($('<li/ >').addClass('no-themes').html('No installed themes found'));
+				instListEl.append($('<li/ >').addClass('no-themes').html('发现没有安装的主题'));
 				return;
 			} else {
 				templates.parse('admin/partials/theme_list', {

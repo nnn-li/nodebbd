@@ -48,7 +48,7 @@
 		<ul class="menu-section-list">
 			<li><a href="{relative_path}/admin/appearance/themes">主题</a></li>
 			<li><a href="{relative_path}/admin/appearance/skins">皮肤</a></li>
-			<li><a href="{relative_path}/admin/appearance/customise">Custom HTML &amp; CSS</a></li>
+			<li><a href="{relative_path}/admin/appearance/customise">自定义 HTML &amp; CSS</a></li>
 		</ul>
 	</section>
 
@@ -198,7 +198,7 @@
 				<ul class="dropdown-menu" role="menu">
                     <li><a href="{relative_path}/admin/appearance/themes">主题</a></li>
                     <li><a href="{relative_path}/admin/appearance/skins">皮肤</a></li>
-                    <li><a href="{relative_path}/admin/appearance/customise">Custom HTML &amp; CSS</a></li>
+                    <li><a href="{relative_path}/admin/appearance/customise">自定义 HTML &amp; CSS</a></li>
 				</ul>
 			</li>
 			<li class="dropdown menu-item">
