@@ -25,7 +25,7 @@
 			</div>
 
 			<div class="form-group">
-				<label>Allow login with</label>
+				<label>允许使用登录</label>
 				<select class="form-control" data-field="allowLoginWith">
 					<option value="username-email">用户名或电子邮件</option>
 					<option value="username">只有用户名</option>
@@ -95,7 +95,7 @@
 			<div class="checkbox">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
 					<input class="mdl-switch__input" type="checkbox" data-field="disableCustomUserSkins">
-					<span class="mdl-switch__label"><strong>Prevent users from 选择一个自定义皮肤</strong></span>
+					<span class="mdl-switch__label"><strong>防止用户选择一个自定义皮肤</strong></span>
 				</label>
 			</div>
 		</form>

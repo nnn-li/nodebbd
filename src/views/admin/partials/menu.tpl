@@ -57,7 +57,7 @@
 		<ul class="menu-section-list">
 			<li><a href="{relative_path}/admin/extend/plugins">插件</a></li>
 			<li><a href="{relative_path}/admin/extend/widgets">小工具</a></li>
-			<li><a href="{relative_path}/admin/extend/rewards">rewards</a></li>
+			<li><a href="{relative_path}/admin/extend/rewards">奖励</a></li>
 		</ul>
 	</section>
 
@@ -206,7 +206,7 @@
 				<ul class="dropdown-menu" role="menu">
 					<li><a href="{relative_path}/admin/extend/plugins">插件</a></li>
 					<li><a href="{relative_path}/admin/extend/widgets">小工具</a></li>
-					<li><a href="{relative_path}/admin/extend/rewards">Rewards</a></li>
+					<li><a href="{relative_path}/admin/extend/rewards">奖励</a></li>
 				</ul>
 			</li>
 			<!-- IF authentication.length -->

@@ -4,7 +4,7 @@
 		<div class="panel panel-default tag-management">
 			<div class="panel-body">
 				<!-- IF !tags.length -->
-				您的论坛没有 have any topics with tags yet.
+				您的论坛话题没有任何有关标签.
 				<!-- ENDIF !tags.length -->
 			
 				<div class="tag-list">
