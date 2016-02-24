@@ -6,4 +6,4 @@
 
 * [zan3](http://zan3.com)
 * [github](https://github.com/zanjs)
-* [zanjs](http://zanjs)
+* [zanjs](http://zanjs.com)
