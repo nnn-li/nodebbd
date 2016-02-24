@@ -25,7 +25,7 @@
 	<section class="menu-section">
 		<h3 class="menu-section-title">设置</h3>
 		<ul class="menu-section-list">
-			<li><a href="{relative_path}/admin/settings/general">General</a></li>
+			<li><a href="{relative_path}/admin/settings/general">常规</a></li>
 			<li><a href="{relative_path}/admin/settings/reputation">威望</a></li>
 			<li><a href="{relative_path}/admin/settings/email">电子邮件</a></li>
 			<li><a href="{relative_path}/admin/settings/user">用户</a></li>
@@ -176,7 +176,7 @@
 			<li class="dropdown menu-item">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">设置</a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="{relative_path}/admin/settings/general">General</a></li>
+					<li><a href="{relative_path}/admin/settings/general">常规</a></li>
                     <li><a href="{relative_path}/admin/settings/reputation">威望</a></li>
                     <li><a href="{relative_path}/admin/settings/email">电子邮件</a></li>
                     <li><a href="{relative_path}/admin/settings/user">用户</a></li>
