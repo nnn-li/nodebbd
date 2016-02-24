@@ -41,11 +41,11 @@
 				<input id="newbiePostDelayThreshold" type="text" class="form-control" value="3" data-field="newbiePostDelayThreshold">
 			</div>
 			<div class="form-group">
-				<label for="initialPostDelay">秒钟？然后新的用户可以发布</label>
+				<label for="initialPostDelay">新的用户多少分钟后可以发布</label>
 				<input id="initialPostDelay" type="text" class="form-control" value="10" data-field="initialPostDelay">
 			</div>
 			<div class="form-group">
-				<label for="postEditDuration">Number of seconds users 允许发布后编辑帖子. (0 disabled)</label>
+				<label for="postEditDuration">多少分钟后允许发布后编辑帖子.</label>
 				<input id="postEditDuration" type="text" class="form-control" value="0" data-field="postEditDuration">
 			</div>
 			<div class="form-group">
@@ -65,7 +65,7 @@
 				<input id="maximumPostLength" type="text" class="form-control" value="32767" data-field="maximumPostLength">
 			</div>
 			<div class="form-group">
-				<label for="topicStaleDays">Days 直到话题被视为失效</label>
+				<label for="topicStaleDays"> 多少天后帖子视为无效</label>
 				<input id="topicStaleDays" type="text" class="form-control" value="60" data-field="topicStaleDays">
 				<p class="help-block">
 					如果该主题被认为是“陈旧”，不是一个警告将显示给谁试图回复该主题的用户。

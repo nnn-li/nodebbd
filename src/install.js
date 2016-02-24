@@ -342,9 +342,9 @@ function createGlobalModeratorsGroup(next) {
 				return next();
 			}
 			groups.create({
-				name: 'Global Moderators',
-				userTitle: 'Global Moderator',
-				description: 'Forum wide moderators',
+				name: '论坛版主',
+				userTitle: '总版主',
+				description: '论坛版主',
 				hidden: 0,
 				private: 1,
 				disableJoinRequests: 1

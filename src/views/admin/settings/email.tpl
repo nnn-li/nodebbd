@@ -75,7 +75,7 @@
 		</select><br />
 		<button class="btn btn-primary" type="button" data-action="email.test">发送测试电子邮件</button>
 		<p class="help-block">
-			测试电子邮件将会被发送到用户的电子邮件地址当前登录。
+			测试电子邮件将会被发送到当前登录用户的电子邮件地址。
 		</p>
 	</div>
 </div>

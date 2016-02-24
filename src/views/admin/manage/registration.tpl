@@ -4,17 +4,17 @@
 	</div>
 	<!-- IF !users.length -->
 	<p class="panel-body">
-		There are no users in the registration queue. <br>
-		要启用此功能, go to <a href="{config.relative_path}/admin/settings/user">Settings -> User -> Authentication</a> and set
-		<strong>Registration Type</strong> to "Admin Approval".
+		有在注册队列中没有用户. <br>
+		要启用此功能, 点击 <a href="{config.relative_path}/admin/settings/user">设置 -> 用户 -> 认证</a> 然后设置
+		<strong>注册类型</strong> 需要 "管理员批准".
 	</p>
 	<!-- ENDIF !users.length -->
 	<table class="table table-striped users-list">
 		<tr>
-			<th>Name</th>
-			<th>Email</th>
+			<th>用户名</th>
+			<th>邮箱</th>
 			<th>IP</th>
-			<th>Time</th>
+			<th>时间</th>
 			<th></th>
 		</tr>
 		<!-- BEGIN users -->
@@ -68,9 +68,9 @@
 	</p>
 	<table class="table table-striped users-list">
 		<tr>
-			<th>Inviter Username</th>
-			<th>Invitee Email</th>
-			<th>Invitee Username (if registered)</th>
+			<th>邀请人用户名</th>
+			<th>受邀者的电子邮件</th>
+			<th>被邀请的用户名（如果已注册）</th>
 		</tr>
 		<!-- BEGIN invites -->
 		<tr>

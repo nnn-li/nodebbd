@@ -362,11 +362,11 @@ Upgrade.upgrade = function(callback) {
 					if (err) {
 						return next(err);
 					}
-					winston.info('[2016/01/20] Creating users:notvalidated done!');
+					winston.info('[2016/01/20] 创建用户：没有做过验证!');
 					Upgrade.update(thisSchemaDate, next);
 				});
 			} else {
-				winston.info('[2016/01/20] Creating users:notvalidated skipped!');
+				winston.info('[2016/01/20] 创建用户：没有跳过验证!');
 				next();
 			}
 		},
@@ -387,9 +387,9 @@ Upgrade.upgrade = function(callback) {
 							return next();
 						}
 						groups.create({
-							name: 'Global Moderators',
-							userTitle: 'Global Moderator',
-							description: 'Forum wide moderators',
+							name: '论坛版主',
+							userTitle: '总版主',
+							description: '论坛版主',
 							hidden: 0,
 							private: 1,
 							disableJoinRequests: 1
@@ -403,11 +403,11 @@ Upgrade.upgrade = function(callback) {
 						return next(err);
 					}
 
-					winston.info('[2016/01/23] Creating Global moderators group done!');
+					winston.info('[2016/01/23] 创建论坛版主组完成!');
 					Upgrade.update(thisSchemaDate, next);
 				});
 			} else {
-				winston.info('[2016/01/23] Creating Global moderators group skipped!');
+				winston.info('[2016/01/23] 创建论坛版主群跳过!');
 				next();
 			}
 		}

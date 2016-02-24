@@ -29,10 +29,10 @@
 			<li><a href="{relative_path}/admin/settings/reputation">Reputation</a></li>
 			<li><a href="{relative_path}/admin/settings/email">电子邮件</a></li>
 			<li><a href="{relative_path}/admin/settings/user">用户</a></li>
-			<li><a href="{relative_path}/admin/settings/group">组</a></li>
-			<li><a href="{relative_path}/admin/settings/guest">宾客</a></li>
+			<li><a href="{relative_path}/admin/settings/group">小组</a></li>
+			<li><a href="{relative_path}/admin/settings/guest">游客</a></li>
 			<li><a href="{relative_path}/admin/settings/uploads">上传</a></li>
-			<li><a href="{relative_path}/admin/settings/post">Post</a></li>
+			<li><a href="{relative_path}/admin/settings/post">帖子</a></li>
 			<li><a href="{relative_path}/admin/settings/chat">聊天</a></li>
 			<li><a href="{relative_path}/admin/settings/pagination">分页</a></li>
 			<li><a href="{relative_path}/admin/settings/tags">标签</a></li>
@@ -93,7 +93,7 @@
 			<li><a href="{relative_path}/admin/advanced/database">数据库</a></li>
 			<li><a href="{relative_path}/admin/advanced/events">活动</a></li>
 			<li><a href="{relative_path}/admin/advanced/logs">日志</a></li>
-			<li><a href="{relative_path}/admin/advanced/post-cache">Post 缓存</a></li>
+			<li><a href="{relative_path}/admin/advanced/post-cache">帖子缓存</a></li>
 			<!-- IF env -->
 			<li><a href="{relative_path}/admin/development/logger">记录仪</a></li>
 			<!-- ENDIF env -->
@@ -169,7 +169,7 @@
                     <li><a href="{relative_path}/admin/manage/tags">标签</a></li>
                     <li><a href="{relative_path}/admin/manage/users/latest">用户</a></li>
                     <li><a href="{relative_path}/admin/manage/registration">注册队列</a></li>
-                    <li><a href="{relative_path}/admin/manage/groups">组</a></li>
+                    <li><a href="{relative_path}/admin/manage/groups">小组</a></li>
                     <li><a href="{relative_path}/admin/manage/flags">Flags</a></li>
 				</ul>
 			</li>
@@ -180,10 +180,10 @@
                     <li><a href="{relative_path}/admin/settings/reputation">Reputation</a></li>
                     <li><a href="{relative_path}/admin/settings/email">电子邮件</a></li>
                     <li><a href="{relative_path}/admin/settings/user">用户</a></li>
-                    <li><a href="{relative_path}/admin/settings/group">组</a></li>
-                    <li><a href="{relative_path}/admin/settings/guest">宾客</a></li>
+                    <li><a href="{relative_path}/admin/settings/group">小组</a></li>
+                    <li><a href="{relative_path}/admin/settings/guest">游客</a></li>
                     <li><a href="{relative_path}/admin/settings/uploads">上传</a></li>
-                    <li><a href="{relative_path}/admin/settings/post">Post</a></li>
+                    <li><a href="{relative_path}/admin/settings/post">帖子</a></li>
                     <li><a href="{relative_path}/admin/settings/chat">聊天</a></li>
                     <li><a href="{relative_path}/admin/settings/pagination">分页</a></li>
                     <li><a href="{relative_path}/admin/settings/tags">标签</a></li>
@@ -243,7 +243,7 @@
 					<li><a href="{relative_path}/admin/advanced/database">数据库</a></li>
                     <li><a href="{relative_path}/admin/advanced/events">活动</a></li>
                     <li><a href="{relative_path}/admin/advanced/logs">日志</a></li>
-                    <li><a href="{relative_path}/admin/advanced/post-cache">Post 缓存</a></li>
+                    <li><a href="{relative_path}/admin/advanced/post-cache">帖子缓存</a></li>
                     <!-- IF env -->
                     <li><a href="{relative_path}/admin/development/logger">记录仪</a></li>
 					<!-- ENDIF env -->

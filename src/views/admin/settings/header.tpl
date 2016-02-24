@@ -1,7 +1,7 @@
 <div class="settings">
 	<div class="row">
 		<div class="col-sm-2 col-xs-12 content-header">
-			Contents
+			内容
 		</div>
 		<div class="col-sm-10 col-xs-12">
 			<nav class="section-content">
