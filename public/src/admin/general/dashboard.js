@@ -57,10 +57,10 @@ define('admin/general/dashboard', ['semver'], function(semver) {
 			// Alter box colour accordingly
 			if (semver.eq(latestVersion, version)) {
 				checkEl.removeClass('alert-info').addClass('alert-success');
-				checkEl.append('<p>You are <strong>up-to-date</strong> <i class="fa fa-check"></i></p>');
+				checkEl.append('<p>目前是最新版 <i class="fa fa-check"></i></p>');
 			} else if (semver.gt(latestVersion, version)) {
 				checkEl.removeClass('alert-info').addClass('alert-danger');
-				checkEl.append('<p>A new version (v' + latestVersion + ') has been released. Consider <a href="https://docs.nodebb.org/en/latest/upgrading/index.html">upgrading your NodeBB</a>.</p>');
+				checkEl.append('<p>新版本 (v' + latestVersion + ') 已经发布. 请 <a href="https://docs.nodebb.org/en/latest/upgrading/index.html">升级您的应用</a>.</p>');
 			}
 		});
 
@@ -190,7 +190,7 @@ define('admin/general/dashboard', ['semver'], function(semver) {
 				labels: trafficLabels,
 				datasets: [
 					{
-						label: "Page Views",
+						label: "页面访问量",
 						fillColor: "rgba(220,220,220,0.2)",
 						strokeColor: "rgba(220,220,220,1)",
 						pointColor: "rgba(220,220,220,1)",
@@ -200,7 +200,7 @@ define('admin/general/dashboard', ['semver'], function(semver) {
 						data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 					},
 					{
-						label: "Unique Visitors",
+						label: "唯一访问者",
 						fillColor: "rgba(151,187,205,0.2)",
 						strokeColor: "rgba(151,187,205,1)",
 						pointColor: "rgba(151,187,205,1)",
@@ -221,13 +221,13 @@ define('admin/general/dashboard', ['semver'], function(semver) {
 				value: 1,
 				color:"#F7464A",
 				highlight: "#FF5A5E",
-				label: "Registered Users"
+				label: "注册用户"
 			},
 			{
 				value: 1,
 				color: "#46BFBD",
 				highlight: "#5AD3D1",
-				label: "Anonymous Users"
+				label: "匿名用户"
 			}], {
 				responsive: true
 			});
@@ -236,31 +236,31 @@ define('admin/general/dashboard', ['semver'], function(semver) {
 				value: 1,
 				color:"#F7464A",
 				highlight: "#FF5A5E",
-				label: "On categories list"
+				label: "在分类列表"
 			},
 			{
 				value: 1,
 				color: "#46BFBD",
 				highlight: "#5AD3D1",
-				label: "Reading posts"
+				label: "阅读帖子"
 			},
 			{
 				value: 1,
 				color: "#FDB45C",
 				highlight: "#FFC870",
-				label: "Browsing topics"
+				label: "浏览主题"
 			},
 			{
 				value: 1,
 				color: "#949FB1",
 				highlight: "#A8B3C5",
-				label: "Recent"
+				label: "最近"
 			},
 			{
 				value: 1,
 				color: "#9FB194",
 				highlight: "#A8B3C5",
-				label: "Unread"
+				label: "未读"
 			}
 			], {
 				responsive: true

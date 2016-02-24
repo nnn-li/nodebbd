@@ -6,7 +6,6 @@
 				<!-- IF !tags.length -->
 				您的论坛话题没有任何有关标签.
 				<!-- ENDIF !tags.length -->
-			
 				<div class="tag-list">
 					<!-- BEGIN tags -->
 					<div class="tag-row" data-tag="{tags.value}">

@@ -3,8 +3,8 @@
 		<div class="col-sm-2 col-xs-12 settings-header">语言设置</div>
 		<div class="col-sm-10 col-xs-12">
 			<p>
-				谁正在访问您的论坛 默认语言确定所有用户的语言设置. <br />
-				个人用户可以覆盖默认的语言他们的帐户设置页面上.
+				所有用户访问您的论坛 的语言设置 :  默认语言. <br />
+				用户在 他们的帐户设置页面上设置后可以覆盖默认的语言.
 			</p>
 
 			<form class="row">

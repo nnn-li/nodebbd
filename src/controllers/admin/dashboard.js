@@ -19,7 +19,7 @@ dashboardController.get = function(req, res, next) {
 			var notices = [
 				{
 					done: !meta.reloadRequired,
-					doneText: '不要求刷新',
+					doneText: '不用刷新',
 					notDoneText:'需要重新加载'
 				},
 				{
@@ -62,10 +62,10 @@ function getStats(callback) {
 		if (err) {
 			return callback(err);
 		}
-		results[0].name = 'Unique Visitors';
-		results[1].name = 'Users';
-		results[2].name = 'Posts';
-		results[3].name = 'Topics';
+		results[0].name = '唯一访问者';
+		results[1].name = '用户';
+		results[2].name = '帖子';
+		results[3].name = '主题';
 
 		callback(null, results);
 	});
