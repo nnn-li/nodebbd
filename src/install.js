@@ -15,22 +15,22 @@ var install = {},
 questions.main = [
 	{
 		name: 'url',
-		description: 'URL used to access this NodeBB',
+		description: '网址用于访问此应用',
 		'default':
 			nconf.get('url') ||
 			(nconf.get('base_url') ? (nconf.get('base_url') + (nconf.get('use_port') ? ':' + nconf.get('port') : '')) : null) ||	// backwards compatibility (remove for v0.7.0)
 			'http://localhost:4567',
 		pattern: /^http(?:s)?:\/\//,
-		message: 'Base URL must begin with \'http://\' or \'https://\'',
+		message: '基本URL必须以 \'http://\' or \'https://\'',
 	},
 	{
 		name: 'secret',
-		description: 'Please enter a NodeBB secret',
+		description: '请输入 a NodeBB secret',
 		'default': nconf.get('secret') || utils.generateUUID()
 	},
 	{
 		name: 'database',
-		description: 'Which database to use',
+		description: '要使用的数据库',
 		'default': nconf.get('database') || 'mongo'
 	}
 ];
@@ -101,7 +101,7 @@ function checkCIFlag(next) {
 			install.ciVals = ciVals;
 			next();
 		} else {
-			winston.error('Required values are missing for automated CI integration:');
+			winston.error('所需的值丢失自动化集成 CI integration:');
 			if (!ciVals.hasOwnProperty('host')) {
 				winston.error('  host');
 			}
@@ -132,7 +132,7 @@ function setupConfig(next) {
 		prompt.get(questions.main, function(err, config) {
 			if (err) {
 				process.stdout.write('\n\n');
-				winston.warn('NodeBB setup ' + err.message);
+				winston.warn('应用设置 ' + err.message);
 				process.exit();
 			}
 
@@ -182,7 +182,7 @@ function completeConfigSetup(err, config, next) {
 }
 
 function setupDefaultConfigs(next) {
-	process.stdout.write('Populating database with default configs, if not already set...\n');
+	process.stdout.write('默认configs 填充数据库, 如果尚未设置...\n');
 	var meta = require('./meta'),
 		defaults = require(path.join(__dirname, '../', 'install/data/defaults.json'));
 
@@ -202,11 +202,11 @@ function enableDefaultTheme(next) {
 
 	meta.configs.get('theme:id', function(err, id) {
 		if (err || id) {
-			process.stdout.write('Previous theme detected, skipping enabling default theme\n');
+			process.stdout.write('Previous theme detected, 跳过使用默认主题\n');
 			return next(err);
 		}
 		var defaultTheme = nconf.get('defaultTheme') || 'nodebb-theme-persona';
-		process.stdout.write('Enabling default theme: ' + defaultTheme + '\n');
+		process.stdout.write('启用默认主题: ' + defaultTheme + '\n');
 		meta.themes.set({
 			type: 'local',
 			id: defaultTheme
@@ -221,7 +221,7 @@ function createAdministrator(next) {
 			return next(err);
 		}
 		if (memberCount > 0) {
-			process.stdout.write('Administrator found, skipping Admin setup\n');
+			process.stdout.write('Administrator found, 跳过管理员设置\n');
 			next();
 		} else {
 			createAdmin(next);
@@ -234,7 +234,7 @@ function createAdmin(callback) {
 		Groups = require('./groups'),
 		password;
 
-	winston.warn('No administrators have been detected, running initial user setup\n');
+	winston.warn('没有检测到任何管理员, 运行初始用户设置\n');
 
 	var questions = [{
 			name: 'username',
@@ -266,7 +266,7 @@ function createAdmin(callback) {
 			}
 
 			if (results['password:confirm'] !== results.password) {
-				winston.warn("Passwords did not match, please try again");
+				winston.warn("密码不匹配, 请再试一次");
 				return retryPassword(results);
 			}
 			var adminUid;
@@ -315,7 +315,7 @@ function createAdmin(callback) {
 	} else {
 		// If automated setup did not provide a user password, generate one, it will be shown to the user upon setup completion
 		if (!install.values.hasOwnProperty('admin:password') && !nconf.get('admin:password')) {
-			process.stdout.write('Password was not provided during automated setup, generating one...\n');
+			process.stdout.write('在自动安装程序没有提供密码，生成一个...\n');
 			password = utils.generateUUID().slice(0, 8);
 		}
 
@@ -338,7 +338,7 @@ function createGlobalModeratorsGroup(next) {
 		},
 		function (exists, next) {
 			if (exists) {
-				winston.info('Global Moderators group found, skipping creation!');
+				winston.info('论坛版主小组发现, skipping creation!');
 				return next();
 			}
 			groups.create({
@@ -369,7 +369,7 @@ function createCategories(next) {
 			return next();
 		}
 
-		process.stdout.write('No categories found, populating instance with default categories\n');
+		process.stdout.write('没有找到的类别, 与默认类别填充实例\n');
 
 		fs.readFile(path.join(__dirname, '../', 'install/data/categories.json'), function (err, default_categories) {
 			if (err) {
@@ -416,7 +416,7 @@ function createWelcomePost(next) {
 			numTopics = results[1];
 
 		if (!parseInt(numTopics, 10)) {
-			process.stdout.write('Creating welcome post!\n');
+			process.stdout.write('创建欢迎帖子!\n');
 			Topics.post({
 				uid: 1,
 				cid: 2,
@@ -431,11 +431,11 @@ function createWelcomePost(next) {
 
 function enableDefaultPlugins(next) {
 
-	process.stdout.write('Enabling default plugins\n');
+	process.stdout.write('默认情况下启用插件\n');
 
 	var defaultEnabled = [
 			'nodebb-plugin-composer-default',
-			'nodebb-plugin-markdown',
+			'nodebb-plugin-markdown-cn',
 			'nodebb-plugin-mentions',
 			'nodebb-widget-essentials',
 			'nodebb-rewards-essentials',
@@ -444,7 +444,7 @@ function enableDefaultPlugins(next) {
 		],
 		customDefaults = nconf.get('defaultPlugins');
 
-	winston.info('[install/defaultPlugins] customDefaults', customDefaults);
+	winston.info('[install/defaultPlugins] 自定义默认值', customDefaults);
 
 	if (customDefaults && customDefaults.length) {
 		try {
@@ -452,7 +452,7 @@ function enableDefaultPlugins(next) {
 			defaultEnabled = defaultEnabled.concat(customDefaults);
 		} catch (e) {
 			// Invalid value received
-			winston.warn('[install/enableDefaultPlugins] Invalid defaultPlugins value received. Ignoring.');
+			winston.warn('[install/enableDefaultPlugins] 收到无效的默认值插件. 忽略.');
 		}
 	}
 
@@ -460,7 +460,7 @@ function enableDefaultPlugins(next) {
 		return array.indexOf(plugin) === index;
 	});
 
-	winston.info('[install/enableDefaultPlugins] activating default plugins', defaultEnabled);
+	winston.info('[install/enableDefaultPlugins] 激活默认插件', defaultEnabled);
 
 	var db = require('./database');
 	var order = defaultEnabled.map(function(plugin, index) {
@@ -519,7 +519,7 @@ install.setup = function (callback) {
 		}
 	], function (err, results) {
 		if (err) {
-			winston.warn('NodeBB Setup Aborted.\n ' + err.stack);
+			winston.warn('安装中断.\n ' + err.stack);
 			process.exit();
 		} else {
 			var data = {};
@@ -542,11 +542,11 @@ install.save = function (server_conf, callback) {
 
 	fs.writeFile(serverConfigPath, JSON.stringify(server_conf, null, 4), function (err) {
 		if (err) {
-			winston.error('Error saving server configuration! ' + err.message);
+			winston.error('保存服务器配置时出错! ' + err.message);
 			return callback(err);
 		}
 
-		process.stdout.write('Configuration Saved OK\n');
+		process.stdout.write('配置保存OK\n');
 
 		nconf.file({
 			file: path.join(__dirname, '..', 'config.json')
