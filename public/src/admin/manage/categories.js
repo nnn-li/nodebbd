@@ -51,11 +51,11 @@ define('admin/manage/categories', ['vendor/jquery/serializeObject/jquery.ba-seri
 				}
 
 				var modal = bootbox.dialog({
-					title: 'Create a Category',
+					title: '创建类别',
 					message: html,
 					buttons: {
 						save: {
-							label: 'Save',
+							label: '保存',
 							className: 'btn-primary',
 							callback: submit
 						}
@@ -75,8 +75,8 @@ define('admin/manage/categories', ['vendor/jquery/serializeObject/jquery.ba-seri
 
 			app.alert({
 				alert_id: 'category_created',
-				title: 'Created',
-				message: 'Category successfully created!',
+				title: '创建',
+				message: '分类创建成功!',
 				type: 'success',
 				timeout: 2000
 			});
@@ -91,7 +91,7 @@ define('admin/manage/categories', ['vendor/jquery/serializeObject/jquery.ba-seri
 		if (!categories || !categories.length) {
 			$('<div></div>')
 				.addClass('alert alert-info text-center')
-				.text('You have no active categories.')
+				.text('您没有有效的分类.')
 				.appendTo(container);
 		} else {
 			sortables = {};
