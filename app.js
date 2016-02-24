@@ -303,9 +303,9 @@ function listPlugins() {
 function shutdown(code) {
 	winston.info('[app] Shutdown (SIGTERM/SIGINT) Initialised.');
 	require('./src/database').close();
-	winston.info('[app] Database connection closed.');
+	winston.info('[app] 数据库连接关闭.');
 	require('./src/webserver').server.close();
-	winston.info('[app] Web server closed to connections.');
+	winston.info('[app] Web服务器关闭连接.');
 
 	winston.info('[app] Shutdown complete.');
 	process.exit(code || 0);
@@ -313,12 +313,12 @@ function shutdown(code) {
 
 function restart() {
 	if (process.send) {
-		winston.info('[app] Restarting...');
+		winston.info('[app] 重新启动...');
 		process.send({
 			action: 'restart'
 		});
 	} else {
-		winston.error('[app] Could not restart server. Shutting down.');
+		winston.error('[app] 无法重新启动服务器.关闭.');
 		shutdown(1);
 	}
 }

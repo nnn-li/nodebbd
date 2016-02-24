@@ -84,19 +84,19 @@ define('admin/general/dashboard', ['semver'], function(semver) {
 
 		var html = '<div class="text-center pull-left">' +
 						'<div>'+ data.onlineRegisteredCount +'</div>' +
-						'<div>Users</div>' +
+						'<div>用户</div>' +
 					'</div>' +
 					'<div class="text-center pull-left">' +
 						'<div>'+ data.onlineGuestCount +'</div>' +
-						'<div>Guests</div>' +
+						'<div>游客</div>' +
 					'</div>' +
 					'<div class="text-center pull-left">' +
 						'<div>'+ (data.onlineRegisteredCount + data.onlineGuestCount) +'</div>' +
-						'<div>Total</div>' +
+						'<div>合计</div>' +
 					'</div>' +
 					'<div class="text-center pull-left">' +
 						'<div>'+ data.socketCount +'</div>' +
-						'<div>Connections</div>' +
+						'<div>连接</div>' +
 					'</div>';
 
 		updateRegisteredGraph(data.onlineRegisteredCount, data.onlineGuestCount);
