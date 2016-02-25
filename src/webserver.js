@@ -34,7 +34,7 @@ module.exports.server = server;
 server.on('error', function(err) {
 	winston.error(err);
 	if (err.code === 'EADDRINUSE') {
-		winston.error('NodeBB address in use, exiting...');
+		winston.error('应用地址在使用, 退出...');
 		process.exit(0);
 	} else {
 		throw err;
@@ -52,7 +52,7 @@ module.exports.listen = function() {
 	logger.init(app);
 
 	emitter.all(['templates:compiled', 'meta:js.compiled', 'meta:css.compiled'], function() {
-		winston.info('NodeBB Ready');
+		winston.info('应用就绪');
 		emitter.emit('nodebb:ready');
 		listen();
 	});
@@ -130,11 +130,11 @@ function listen(callback) {
 			process.exit();
 		}
 
-		winston.warn('[startup] If you want to start nodebb on multiple ports please use loader.js');
-		winston.warn('[startup] Defaulting to first port in array, ' + port[0]);
+		winston.warn('[startup] 如果你想为应用开多个端口，请使用 loader.js');
+		winston.warn('[startup] 默认为数组中的第一个端口, ' + port[0]);
 		port = port[0];
 		if (!port) {
-			winston.error('[startup] Invalid port, exiting');
+			winston.error('[startup] 无效的端口, 退出');
 			process.exit();
 		}
 	}
@@ -145,7 +145,7 @@ function listen(callback) {
 	}
 
 	if ((port === 80 || port === 443) && process.env.NODE_ENV !== 'development') {
-		winston.info('Using ports 80 and 443 is not recommend; use a proxy instead. See README.md');
+		winston.info('不推荐端口号使用 80 and 443 ; 使用代理来代替. See README.md');
 	}
 
 	var isSocket = isNaN(port),
@@ -155,11 +155,11 @@ function listen(callback) {
 
 	args.push(function(err) {
 		if (err) {
-			winston.info('[startup] NodeBB was unable to listen on: ' + bind_address);
+			winston.info('[startup] 应用无法监听: ' + bind_address);
 			process.exit();
 		}
 
-		winston.info('NodeBB is now listening on: ' + (isSocket ? port : bind_address));
+		winston.info('应用现在监听: ' + (isSocket ? port : bind_address));
 		if (oldUmask) {
 			process.umask(oldUmask);
 		}
@@ -172,7 +172,7 @@ function listen(callback) {
 			if (!err) {
 				server.listen.apply(server, args);
 			} else {
-				winston.error('[startup] NodeBB was unable to secure domain socket access (' + port + ')');
+				winston.error('[startup] app was unable to secure domain socket access (' + port + ')');
 				winston.error('[startup] ' + err.message);
 				process.exit();
 			}

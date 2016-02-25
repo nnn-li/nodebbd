@@ -32,7 +32,7 @@ var web = {},
 
 web.install = function(port) {
 	port = port || 4567;
-	winston.info('Launching web installer on port', port);
+	winston.info('启动Web安装程的序端口', port);
 
 	app.use(express.static('public', {}));
 	app.engine('tpl', require('templates.js').__express);
@@ -125,14 +125,14 @@ function launch(req, res) {
 
 function compileLess(callback) {
 	if ((nconf.get('from-file') || '').indexOf('less') !== -1) {
-		winston.info('LESS compilation skipped');
+		winston.info('LESS编译跳过');
 		return callback(false);
 	}
 
 	fs.readFile(path.join(__dirname, '../public/less/install.less'), function(err, style) {
 		less.render(style.toString(), function(err, css) {
 			if(err) {
-				return winston.error('Unable to compile LESS: ', err);
+				return winston.error('无法编译LESS: ', err);
 			}
 
 			fs.writeFile(path.join(__dirname, '../public/stylesheet.css'), css.css, callback);
@@ -142,7 +142,7 @@ function compileLess(callback) {
 
 function compileJS(callback) {
 	if ((nconf.get('from-file') || '').indexOf('js') !== -1) {
-		winston.info('Client-side JS compilation skipped');
+		winston.info('客户端JS跳过编译');
 		return callback(false);
 	}
 

@@ -120,7 +120,7 @@
 		<p>
 			<h1>恭喜！您的NodeBB已建立.</h1>
 			
-			<button id="launch" class="btn btn-lg btn-success">发射 NodeBB <i class="fa fa-spinner fa-spin hide"></i></button>
+			<button id="launch" class="btn btn-lg btn-success">启动 NodeBB <i class="fa fa-spinner fa-spin hide"></i></button>
 		</p>
 	</div>
 

@@ -13,7 +13,7 @@ module.exports = function(config, callback) {
 	async.waterfall([
 		function (next) {
 			process.stdout.write('\n');
-			winston.info('Now configuring ' + config.database + ' database:');
+			winston.info('现在配置 ' + config.database + ' database:');
 			getDatabaseConfig(config, next);
 		},
 		function (databaseConfig, next) {
@@ -40,7 +40,7 @@ function getDatabaseConfig(config, callback) {
 			prompt.get(questions.mongo, callback);
 		}
 	} else {
-		return callback(new Error('unknown database : ' + config.database));
+		return callback(new Error('未知数据库 : ' + config.database));
 	}
 }
 
@@ -70,7 +70,7 @@ function saveDatabaseConfig(config, databaseConfig, callback) {
 			database: databaseConfig['mongo:database']
 		};
 	} else {
-		return callback(new Error('unknown database : ' + config.database));
+		return callback(new Error('未知数据库 : ' + config.database));
 	}
 
 	var allQuestions = questions.redis.concat(questions.mongo);

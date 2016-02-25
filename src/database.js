@@ -5,7 +5,7 @@ var databaseName = nconf.get('database');
 var winston = require('winston');
 
 if (!databaseName) {
-	winston.info('Database type not set! Run ./nodebb setup');
+	winston.info('数据库类型没设置! Run ./nodebb setup');
 	process.exit();
 }
 

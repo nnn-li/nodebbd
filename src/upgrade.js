@@ -40,7 +40,7 @@ Upgrade.update = function(schemaDate, callback) {
 Upgrade.upgrade = function(callback) {
 	var updatesMade = false;
 
-	winston.info('Beginning database schema update');
+	winston.info('开始数据库架构更新');
 
 	async.series([
 		function(next) {
@@ -66,7 +66,7 @@ Upgrade.upgrade = function(callback) {
 			thisSchemaDate = Date.UTC(2015, 8, 30);
 			if (schemaDate < thisSchemaDate) {
 				updatesMade = true;
-				winston.info('[2015/09/30] Converting default Gravatar image to default User Avatar');
+				winston.info('[2015/09/30] 转换默认的Gravatar图像默认的用户头像');
 
 				async.waterfall([
 					async.apply(db.isObjectField, 'config', 'customGravatarDefaultImage'),
@@ -74,7 +74,7 @@ Upgrade.upgrade = function(callback) {
 						if (keyExists) {
 							_next();
 						} else {
-							winston.info('[2015/09/30] Converting default Gravatar image to default User Avatar skipped');
+							winston.info('[2015/09/30] 转换默认的Gravatar图像默认的用户头像跳过');
 							Upgrade.update(thisSchemaDate, next);
 							next();
 						}
@@ -284,7 +284,7 @@ Upgrade.upgrade = function(callback) {
 
 			if (schemaDate < thisSchemaDate) {
 				updatesMade = true;
-				winston.info('[2015/12/23] Adding theme to active plugins sorted set');
+				winston.info('[2015/12/23] 添加主题，以活跃的插件设置排序');
 
 				async.waterfall([
 					async.apply(db.getObjectField, 'config', 'theme:id'),
@@ -416,9 +416,9 @@ Upgrade.upgrade = function(callback) {
 	], function(err) {
 		if (!err) {
 			if(updatesMade) {
-				winston.info('[upgrade] Schema update complete!');
+				winston.info('[upgrade] 架构更新完成!');
 			} else {
-				winston.info('[upgrade] Schema already up to date!');
+				winston.info('[upgrade] 架构已经是最新的!');
 			}
 		} else {
 			switch(err.message) {

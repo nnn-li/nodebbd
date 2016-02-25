@@ -439,7 +439,9 @@ function enableDefaultPlugins(next) {
 			'nodebb-plugin-mentions',
 			'nodebb-widget-essentials',
 			'nodebb-rewards-essentials',
+            'nodebb-plugin-email-smtp',            
 			'nodebb-plugin-soundpack-default',
+            'nodebb-plugin-dbsearch',
 			'nodebb-plugin-emoji-extended'
 		],
 		customDefaults = nconf.get('defaultPlugins');
