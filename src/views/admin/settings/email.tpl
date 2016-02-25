@@ -14,7 +14,7 @@
 			<div class="form-group">
 				<label for="email:from_name"><strong>From Name</strong></label>
 				<p class="help-block">
-					从该名称在电子邮件中显示。
+					在电子邮件中显示该名称。
 				</p>
 				<input type="text" class="form-control input-lg" id="email:from_name" data-field="email:from_name" placeholder="NodeBB" /><br />
 			</div>
