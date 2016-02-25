@@ -60,8 +60,7 @@ loadConfig();
 if (!process.send) {
 	// If run using `node app`, log GNU copyright info along with server info
 	winston.info('NodeBB v' + nconf.get('version') + ' Copyright (C) 2013-2014 NodeBB Inc.');
-	winston.info('本节目绝对没有担保.');
-	winston.info('这是自由软件，欢迎你重新分配它在一定条件下.');
+	winston.info('这是自由软件，欢迎你在一定条件下重新分配它.');
 	winston.info('');
 }
 
@@ -127,14 +126,14 @@ function start() {
 
 	if (nconf.get('isPrimary') === 'true') {
 		winston.info('Time: %s', (new Date()).toString());
-		winston.info('Initializing NodeBB v%s', nconf.get('version'));
+		winston.info('初始化 v%s', nconf.get('version'));
 
 
 		var host = nconf.get(nconf.get('database') + ':host'),
 			storeLocation = host ? 'at ' + host + (host.indexOf('/') === -1 ? ':' + nconf.get(nconf.get('database') + ':port') : '') : '';
 
 		winston.verbose('* using %s store %s', nconf.get('database'), storeLocation);
-		winston.verbose('* using themes stored in: %s', nconf.get('themes_path'));
+		winston.verbose('* 使用主题存储在: %s', nconf.get('themes_path'));
 	}
 
 	process.on('SIGTERM', shutdown);
@@ -226,7 +225,7 @@ function start() {
 }
 
 function setup() {
-	winston.info('NodeBB Setup Triggered via Command Line');
+	winston.info('应用设置通过命令行触发');
 
 	var install = require('./src/install');
 

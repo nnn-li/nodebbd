@@ -46,7 +46,7 @@ switch(process.argv[2]) {
 		break;
 
 	case 'start':
-		process.stdout.write('\nStarting NodeBB\n'.bold);
+		process.stdout.write('\n启动\n'.bold);
 		process.stdout.write('  "' + './nodebb stop'.yellow + '" to stop the NodeBB server\n');
 		process.stdout.write('  "' + './nodebb log'.yellow + '" to view server output\n');
 		process.stdout.write('  "' + './nodebb restart'.yellow + '" to restart NodeBB\n\n'.reset);
@@ -61,9 +61,9 @@ switch(process.argv[2]) {
 		getRunningPid(function(err, pid) {
 			if (!err) {
 				process.kill(pid, 'SIGTERM');
-				process.stdout.write('Stopping NodeBB. Goodbye!\n')
+				process.stdout.write('停止. Goodbye!\n')
 			} else {
-				process.stdout.write('NodeBB is already stopped.\n');
+				process.stdout.write('已经停止.\n');
 			}
 		});
 		break;

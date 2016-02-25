@@ -13,7 +13,7 @@ module.exports = function(Meta) {
 
 	Meta.dependencies.check = function(callback) {
 		var modules = Object.keys(pkg.dependencies);
-		winston.verbose('Checking dependencies for outdated modules');
+		winston.verbose('检查过时的模块的依赖');
 
 		async.every(modules, function(module, next) {
 			fs.readFile(path.join(__dirname, '../../node_modules/', module, 'package.json'), {
