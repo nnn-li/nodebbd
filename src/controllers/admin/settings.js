@@ -17,6 +17,7 @@ settingsController.get = function(req, res, next) {
 	}
 };
 
+// 渲染电子邮件
 
 function renderEmail(req, res, next) {
 	var fs = require('fs'),
