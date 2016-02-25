@@ -8,8 +8,8 @@
         "order": 1
     },
     {
-        "name": "一般讨论",
-        "description": "可以肆意忌惮的耍存在",
+        "name": "论坛讨论",
+        "description": "未来论坛的发展方向",
         "bgColor": "#59b3d0",
         "color": "#fff",
         "icon" : "fa-comments-o",
@@ -24,8 +24,8 @@
         "order": 4
     },
     {
-        "name": "评论与反馈",
-        "description": "迷途了吗，遇到问题请告知我们!",
+        "name": "问题与反馈",
+        "description": "遇到问题请告知我们!",
         "bgColor": "#e95c5a",
         "color": "#fff",
         "icon" : "fa-question",
